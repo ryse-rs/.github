@@ -43,7 +43,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: impact
+    id: added-value
     attributes:
       label: What is the expected added-value for the target audience?
       description: This could include features, functionality, performance improvements, or any other outcomes that will directly impact their experience with the product.

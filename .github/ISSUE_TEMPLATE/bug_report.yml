@@ -6,6 +6,12 @@ projects: ["ryse-rs/2"]
 body:
   - type: markdown
     attributes:
+      value: "[!NOTE] To the attention of anyone willing to fix this bug (may be you!)"
+  - type: markdown
+    attributes:
+      value: "[!NOTE] To the attention of anyone willing to fix this bug (may be you!) [!NOTE]"
+  - type: markdown
+    attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
         [!NOTE] To the attention of anyone willing to fix this bug (may be you!) [!NOTE]
