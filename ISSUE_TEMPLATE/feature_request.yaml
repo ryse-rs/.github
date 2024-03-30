@@ -1,0 +1,104 @@
+name: Feature Request
+description: Propose a new feature
+title: "[Feature]: "
+labels: ["feature", "raw"]
+projects: ["ryse-rs/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |        
+        Thanks for helping improve this project, it's much appraciated.
+        [!NOTE] To the attention of anyone willing to contribute or implement this feature (may be you!) [!NOTE]
+        - [ ] Self-assign the issue
+        - [ ] Propose a solution in the issue description / comments.
+        - [ ] Wait for the status to be updated to `TODO` before you start the implementation.
+        - [ ] Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
+        Please make sure:
+        - [ ] To write down your design / implementation choices. What worked, what did not or would not, why you chose this over that.
+        - [ ] To implement extensive unit and/or integration tests. Or justify why they are not needed in the comments
+        - [ ] To write required documentation
+        - [ ] To create a new issue for any future __expected__ improvment and reference this one in the new issue description.
+        Once done working on the implementation:
+        - [ ] Rebase main in your branch (if needed).
+        - [ ] Request a maintainer review from the PR.
+        [!NOTE] If you have any questions or need guidance, feel free to add related labels and ping a maintainer [!NOTE]
+  - type: input
+    id: target
+    attributes:
+      label: Who does this feature target? / Who would directly benefit from this feature?
+      description: Please provide a qualified answer. `users` is not a qualified answer.
+      placeholder: The role - WHO
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: What is the expected added-value for the target audience?
+      description: This could include features, functionality, performance improvements, or any other outcomes that will directly impact their experience with the product.
+      placeholder: The motivation - WHY
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Which target audience needs does this feature address?
+      description: 
+      placeholder: The need - WHAT
+  - type: textarea
+    id: information
+    attributes:
+      label: Feel free to provide any additional information that could help us understand the context of this feature request.
+      description: 
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Feel free to provide your ideal implementation details. This will speed up the process.
+      description: 
+      placeholder: Structure content, Traits, patterns, relations between entities, etc. 
+
+# SCORING SYSTEM, COMMON TO ALL TEMPLATES
+  - type: markdown
+    attributes:
+      value: |
+        ## SCORING
+        [!NOTE]
+          Priority Formula: _impact * effort * complexity_
+          Contribution Formula: _impact * 0.5 * complexity * (actually merged) effort_.
+          Effort being computed this way: max(additions, deletions)
+        [!NOTE]
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
+      options:
+        - Negligible impact | Benefits really few users
+        - Interesting feature | Benefits a fair proportion of users
+        - Non-blocking but essential feature | Every user will benefit from having this feature.
+        - This feature is a prerequisite for other essential features | Would have no user without this feature.
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+      options:
+        - "-200 LoC"
+        - "-750 LoC"
+        - "-1k5 LoC"
+        - "+1k5 LoC"
+    validations:
+      required: true
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
+      options:
+        - Easy. Use of brain cells is mostly null.
+        - Manageable. Will require hours of research / experimentation.
+        - Hard. Will require days of research / experimentation, __prior to implementation__.
+        - Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+    validations:
+      required: true
