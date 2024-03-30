@@ -1,27 +1,34 @@
 name: Feature Request
-description: Propose a new feature
-title: "[Feature]: "
+description: Propose a new feature following our methodology
+title: "Feature: "
 labels: ["feature", "raw"]
 projects: ["ryse-rs/2"]
 body:
   - type: markdown
     attributes:
-      value: |        
-        Thanks for helping improve this project, it's much appraciated.
-        [!NOTE] If you have any questions or need guidance, feel free to add related labels and ping a maintainer [!NOTE]
+      value: |      
+        ### Thanks for your contribution to enhancing this project. Your efforts are greatly appreciated. 🙏🏻
+        > [!IMPORTANT]  
+        > Please fill this form with care. We highly prioritize ready to process requests.
+        ## CONTRIBUTOR RULES
+        > [!WARNING] 
+        > CONTRIBUTOR ONLY RULES.
+        > Ignore the following checkboxes if you are not going to implement this feature yourself.
+        > [!TIP]
+        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer        
   - type: checkboxes
     id: contributor-rules
     attributes:
-      label: To the attention of anyone willing to contribute or implement this feature (may be you!)
+      label: If you want to implement this feature yourself ⬇️
       options:
         - label: Self-assign the issue
         - label: Propose a solution in the issue description / comments.
         - label: Wait for the status to be updated to `TODO` before you start the implementation.
-        - label: Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
+        - label: Create a branch (from the GitHub development panel on the right) and immediately create a Pull Request from that branch. ➡️
   - type: checkboxes
     id: coding-rules
     attributes:
-      label: Please make sure
+      label: Please make sure... ⬇️
       options:
         - label: To write down in comments your design / implementation choices. What worked, what did not or would not, why you chose this over that.
         - label: To implement extensive unit and/or integration tests. Or justify why they are not needed in the comments
@@ -30,10 +37,14 @@ body:
   - type: checkboxes
     id: pr-rules
     attributes:
-      label: Once done working on the implementation
+      label: Once done working on the implementation ⬇️
       options:
         - label: Rebase main in your branch (if needed).
         - label: Request a maintainer review from the PR.
+  - type: markdown
+    attributes:
+      value: |
+        # FEATURE REQUEST RULES
   - type: input
     id: target
     attributes:
@@ -69,12 +80,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## SCORING
-        [!NOTE]
-          Priority Formula: _impact * effort * complexity_
-          Contribution Formula: _impact * 0.5 * complexity * (actually merged) effort_.
-          Effort being computed this way: max(additions, deletions)
-        [!NOTE]
+        ## PRIORIZATION RULES - SCORING SYSTEM
+        > [!NOTE]
+        > Priority Formula: _impact * effort * complexity_
+        > Contribution Formula: _impact * 0.5 * complexity * (actually merged) effort_.
+        > Effort being computed this way: max(additions, deletions)
   - type: dropdown
     id: impact
     attributes:

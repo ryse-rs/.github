@@ -1,6 +1,6 @@
 name: Bug Report
-description: File a bug report
-title: "[Bug]: "
+description: File a bug report following our methodology
+title: "Bug: "
 labels: ["bug", "raw"]
 projects: ["ryse-rs/2"]
 body:
@@ -16,8 +16,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        **NOTE**
-        To the attention of anyone willing to fix this bug (may be you!) [!NOTE]
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
         - [ ] if the resolution implies design changes, set the status to "TO CLARIFY" and wait for the status to be updated to `TODO` before you start the implementation. Else, tick and go next.
