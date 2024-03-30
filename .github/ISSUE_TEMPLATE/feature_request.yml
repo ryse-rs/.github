@@ -14,26 +14,26 @@ body:
     attributes:
       label: To the attention of anyone willing to contribute or implement this feature (may be you!)
       options:
-        - Self-assign the issue
-        - Propose a solution in the issue description / comments.
-        - Wait for the status to be updated to `TODO` before you start the implementation.
-        - Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
+        - label: Self-assign the issue
+        - label: Propose a solution in the issue description / comments.
+        - label: Wait for the status to be updated to `TODO` before you start the implementation.
+        - label: Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
   - type: checkboxes
     id: coding-rules
     attributes:
       label: Please make sure
       options:
-        - To write down in comments your design / implementation choices. What worked, what did not or would not, why you chose this over that.
-        - To implement extensive unit and/or integration tests. Or justify why they are not needed in the comments
-        - To write required documentation
-        - To create a new issue for any future __expected__ improvment and reference this one in the new issue description.
+        - label: To write down in comments your design / implementation choices. What worked, what did not or would not, why you chose this over that.
+        - label: To implement extensive unit and/or integration tests. Or justify why they are not needed in the comments
+        - label: To write required documentation
+        - label: To create a new issue for any future __expected__ improvment and reference this one in the new issue description.
   - type: checkboxes
     id: pr-rules
     attributes:
       label: Once done working on the implementation
       options:
-        - Rebase main in your branch (if needed).
-        - Request a maintainer review from the PR.
+        - label: Rebase main in your branch (if needed).
+        - label: Request a maintainer review from the PR.
   - type: input
     id: target
     attributes:
@@ -54,18 +54,15 @@ body:
     id: need
     attributes:
       label: Which target audience needs does this feature address?
-      description: 
       placeholder: The need - WHAT
   - type: textarea
     id: information
     attributes:
       label: Feel free to provide any additional information that could help us understand the context of this feature request.
-      description: 
   - type: textarea
     id: implementation
     attributes:
       label: Feel free to provide your ideal implementation details. This will speed up the process.
-      description: 
       placeholder: Structure content, Traits, patterns, relations between entities, etc. 
 
 # SCORING SYSTEM, COMMON TO ALL TEMPLATES
