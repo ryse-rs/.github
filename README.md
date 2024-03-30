@@ -6,4 +6,8 @@ To be used by contributors
 
 # TODO
 
-- Code of conduct
+- PR template
+- Automatic scoring computing
+- Automatic process steps from project (like raw to ready)
+- French version or push new issues from external (notion)
+-
