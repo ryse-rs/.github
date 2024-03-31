@@ -12,25 +12,31 @@ body:
         > Please fill this form with care. We highly prioritize ready to process requests.
 
         <details>
-          <summary>## CONTRIBUTOR RULES - To the attention of the assignee</summary>       
+        <summary>
+          
+        ## CONTRIBUTOR RULES - To the attention of the assignee
+          
+        </summary>
+
         > [!WARNING] 
         > CONTRIBUTOR ONLY RULES.
         > Ignore the following checkboxes if you are not going to implement this feature yourself.
         > [!TIP]
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
-        𝟏 - If you want to implement this feature yourself
+        ### 𝟏 - If you want to implement this feature yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
         - [ ] Wait for the status to be updated to `TODO` before you start the implementation.
         - [ ] Create a branch (from the GitHub development panel on the right) and immediately create a Pull Request from that branch.
-        𝟐 - Please make sure...
+        ### 𝟐 - Implementation rules
         - [ ] Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
         - [ ] Have you implemented unit and/or integration tests? Or justify why they are not needed in the comments.
         - [ ] Have you written documentation? Make sure anyone else working over your code can understand it.
         - [ ] Make sure to create a new issue for any future __expected__ improvment and reference this one in the new issue description.
-        𝟑 - Once done working on the implementation
+        ### 𝟑 - Once done working on the implementation
         - [ ] Rebase main in your branch (if needed).
         - [ ] Request a maintainer review from the PR.
+
         </details>
   - type: markdown
     attributes:
@@ -63,6 +69,8 @@ body:
       description: The need - WHAT. Note this list is expected to be regularly updated.
       value: |
         - [ ] ...
+    validations:
+      required: true
   - type: textarea
     id: implementation
     attributes:
