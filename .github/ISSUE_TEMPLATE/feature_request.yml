@@ -11,15 +11,17 @@ body:
         > [!IMPORTANT]  
         > Please fill this form with care. We highly prioritize ready to process requests.
         ## CONTRIBUTOR RULES
+        <details>
+          <summary>To the attention of the assigned contributor</summary>       
         > [!WARNING] 
         > CONTRIBUTOR ONLY RULES.
         > Ignore the following checkboxes if you are not going to implement this feature yourself.
         > [!TIP]
-        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer        
+        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
   - type: checkboxes
     id: contributor-rules
     attributes:
-      label: If you want to implement this feature yourself ⬇️
+      label: 𝟏 - If you want to implement this feature yourself
       options:
         - label: Self-assign the issue
         - label: Propose a solution in the issue description / comments.
@@ -28,16 +30,16 @@ body:
   - type: checkboxes
     id: coding-rules
     attributes:
-      label: Please make sure... ⬇️
+      label: 𝟐 - Please make sure...
       options:
-        - label: To write down in comments your design / implementation choices. What worked, what did not or would not, why you chose this over that.
-        - label: To implement extensive unit and/or integration tests. Or justify why they are not needed in the comments
-        - label: To write required documentation
-        - label: To create a new issue for any future __expected__ improvment and reference this one in the new issue description.
+        - label: Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
+        - label: Have you implemented unit and/or integration tests? Or justify why they are not needed in the comments.
+        - label: Have you written documentation? Make sure anyone else working over your code can understand it.
+        - label: Make sure to create a new issue for any future __expected__ improvment and reference this one in the new issue description.
   - type: checkboxes
     id: pr-rules
     attributes:
-      label: Once done working on the implementation ⬇️
+      label: 𝟑 - Once done working on the implementation
       options:
         - label: Rebase main in your branch (if needed).
         - label: Request a maintainer review from the PR.
@@ -56,20 +58,22 @@ body:
   - type: textarea
     id: added-value
     attributes:
-      label: What is the expected added-value for the target audience?
+      label: Which target audience needs does this feature address? What is the expected added-value to the product?
       description: This could include features, functionality, performance improvements, or any other outcomes that will directly impact their experience with the product.
       placeholder: The motivation - WHY
     validations:
       required: true
   - type: textarea
-    id: need
-    attributes:
-      label: Which target audience needs does this feature address?
-      placeholder: The need - WHAT
-  - type: textarea
     id: information
     attributes:
       label: Feel free to provide any additional information that could help us understand the context of this feature request.
+  - type: textarea
+    id: need
+    attributes:
+      label: Please set up a complete task list.
+      description: The need - WHAT. Note this list is expected to be regularly updated.
+      value: |
+        - [ ] ...
   - type: textarea
     id: implementation
     attributes:
@@ -80,10 +84,10 @@ body:
   - type: markdown
     attributes:
       value: |
+        </details>
         ## PRIORIZATION RULES - SCORING SYSTEM
         > [!NOTE]
-        > Priority Formula: _impact * effort * complexity_
-        > Contribution Formula: _impact * 0.5 * complexity * (actually merged) effort_.
+        > **Priority Formula** ➧ _impact * effort * complexity_  |  **Contribution Formula** ➧ _impact * 0.5 * complexity * (actually merged) effort_.
         > Effort being computed this way: max(additions, deletions)
   - type: dropdown
     id: impact
@@ -91,10 +95,10 @@ body:
       label: Impact
       description: How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
       options:
-        - Negligible impact | Benefits really few users
-        - Interesting feature | Benefits a fair proportion of users
-        - Non-blocking but essential feature | Every user will benefit from having this feature.
-        - This feature is a prerequisite for other essential features | Would have no user without this feature.
+        - I-1. Negligible impact | Benefits really few users
+        - I-2. Interesting feature | Benefits a fair proportion of users
+        - I-3. Non-blocking but essential feature | Every user will benefit from having this feature.
+        - I-4. This feature is a prerequisite for other essential features | Would have no user without this feature.
     validations:
       required: true
   - type: dropdown
@@ -103,10 +107,10 @@ body:
       label: Effort
       description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
       options:
-        - "-200 LoC"
-        - "-750 LoC"
-        - "-1k5 LoC"
-        - "+1k5 LoC"
+        - "E-1. -200 LoC"
+        - "E-2. -750 LoC"
+        - "E-3. -1k5 LoC"
+        - "E-4. +1k5 LoC"
     validations:
       required: true
   - type: dropdown
@@ -115,9 +119,9 @@ body:
       label: Complexity
       description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
       options:
-        - Easy. Use of brain cells is mostly null.
-        - Manageable. Will require hours of research / experimentation.
-        - Hard. Will require days of research / experimentation, __prior to implementation__.
-        - Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        - C-1. Easy. Use of brain cells is mostly null.
+        - C-2. Manageable. Will require hours of research / experimentation.
+        - C-3. Hard. Will require days of research / experimentation, __prior to implementation__.
+        - C-4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
     validations:
       required: true
