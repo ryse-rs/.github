@@ -21,8 +21,10 @@ body:
         > [!WARNING] 
         > CONTRIBUTOR ONLY RULES.
         > Ignore the following checkboxes if you are not going to implement this feature yourself.
+
         > [!TIP]
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
+
         ### 𝟏 - If you want to implement this feature yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
