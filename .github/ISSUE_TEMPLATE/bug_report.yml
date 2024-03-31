@@ -6,28 +6,38 @@ projects: ["ryse-rs/2"]
 body:
   - type: markdown
     attributes:
-      value: "**NOTE** To the attention of anyone willing to fix this bug (may be you!)"
-  - type: markdown
-    attributes:
       value: |
-        > [!NOTE]
-        > To the attention of anyone willing to fix this bug (may be you!)
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+        ### Thanks for taking the time to fill out this bug report! 🐞
+
+        > [!IMPORTANT]  
+        > Please fill this form with care. Ready to process reports are prioritized.
+
+        > [!TIP]
+        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
+
+        - [ ] Once you consider this issue ready to be put in the BACKLOG, set its status to "PROCESS" and wait for the status to be updated to `BACKLOG` before you start the implementation.
+        
+        <details>
+        <summary>
+          
+        ## CONTRIBUTOR RULES - To the attention of the assignee
+
+        </summary>
+
+        > ❗ _Ignore the following if you are not going to fix this yourself._ ❗
+        ### 𝟏 - If you want to fix this yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
-        - [ ] if the resolution implies design changes, set the status to "TO CLARIFY" and wait for the status to be updated to `TODO` before you start the implementation. Else, tick and go next.
+        - [ ] Set the appropriate _status_: BACKLOG (if ready) or CLARIFY (if still questions) or ACTIVE (if you're working on the implementation)
         - [ ] Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
-        Once done working on the implementation:
-        - [ ] Rebase main in your branch (if needed).
-        - [ ] Request a maintainer review from the PR.
-        Please make sure:
+        ### 𝟐 - Implementation rules
         - [ ] To write down your design / implementation choices. What worked, what did not or would not, why you chose this over that.
         - [ ] To implement extensive unit and/or integration tests to newly added code and to secure the root of the current issue. Or justify why they are not needed in the comments
         - [ ] To write required documentation to newly added code
-        [!NOTE] If you have any questions or need guidance, feel free to add related labels and ping a maintainer [!NOTE]
+        ### 𝟑 - Once done working on the implementation
+        - [ ] Rebase main in your branch (if needed) and set it as _read for review_.
+        
+        </details>
   - type: textarea
     id: what-happened
     attributes:
@@ -42,11 +52,13 @@ body:
       description: A clear and concise description of what you expected to happen.
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: context
     attributes:
       label: Environment
       description: Please provide any relevant information about your environment (e.g. browser, OS, versions etc.).
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
@@ -58,22 +70,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## SCORING
-        [!NOTE]
-          Priority Formula: _impact * effort * complexity_
-          Contribution Formula: _impact * 0.5 * complexity * (actually merged) effort_.
-          Effort being computed this way: max(additions, deletions)
-        [!NOTE]
+        ## PRIORIZATION RULES - SCORING SYSTEM
+        > [!NOTE]
+        > __Priority Formula__ ➧ `impact * effort * complexity`
+        > __Contribution Formula__ ➧ `impact * 0.5 * complexity * (actually merged) effort`
+        > Effort being computed this way: `max(additions, deletions)`
   - type: dropdown
     id: impact
     attributes:
       label: Impact
       description: How many users are affected and how severe is the impact? `average(reach, impact)`
       options:
-        - Negligible impact | Affects really few users
-        - Affects a specific part of the application, but not critical | Affects a small number of users
-        - Affects a core part of the application | Affects a large number of users
-        - Nothing works | Every user is affected
+        - I-1. Negligible impact | Affects really few users
+        - I-2. Affects a specific part of the application, but not critical | Affects a small number of users
+        - I-3. Affects a core part of the application | Affects a large number of users
+        - I-4. Nothing works | Every user is affected
     validations:
       required: true
   - type: dropdown
@@ -82,10 +93,10 @@ body:
       label: Effort
       description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
       options:
-        - "-200 LoC"
-        - "-750 LoC"
-        - "-1k5 LoC"
-        - "+1k5 LoC"
+        - "E-1. -200 LoC"
+        - "E-2. -750 LoC"
+        - "E-3. -1k5 LoC"
+        - "E-4. +1k5 LoC"
     validations:
       required: true
   - type: dropdown
@@ -94,10 +105,10 @@ body:
       label: Complexity
       description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
       options:
-        - Easy. Use of brain cells is mostly null.
-        - Manageable. Will require hours of research / experimentation.
-        - Hard. Will require days of research / experimentation, __prior to implementation__.
-        - Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        - C-1. Easy. Use of brain cells is mostly null.
+        - C-2. Manageable. Will require hours of research / experimentation.
+        - C-3. Hard. Will require days of research / experimentation, __prior to implementation__.
+        - C-4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
     validations:
       required: true
 

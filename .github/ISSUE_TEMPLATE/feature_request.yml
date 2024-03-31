@@ -9,31 +9,25 @@ body:
       value: |      
         ### Thanks for your contribution to enhancing this project. Your efforts are greatly appreciated. 🙏🏻
         > [!IMPORTANT]  
-        > Please fill this form with care. We highly prioritize ready to process requests.
+        > Please fill this form with care. Ready to process requests are prioritized.
 
         > [!TIP]
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
 
-        > [!WARNING] 
-        > CONTRIBUTOR ONLY RULES.
-        > Ignore the following checkboxes if you are not going to implement this feature yourself.
-
+        - [ ] Once you consider this issue ready to be put in the BACKLOG, set its status to "PROCESS" and wait for the status to be updated to `BACKLOG` before you start the implementation.
+        
         <details>
         <summary>
-          
-        ## CONTRIBUTOR RULES - To the attention of the assignee
-        
-        > [!WARNING] 
-        > CONTRIBUTOR ONLY RULES.
-        > Ignore the following checkboxes if you are not going to implement this feature yourself.
 
+        ## CONTRIBUTOR RULES - To the attention of the assignee
 
         </summary>
 
+        > ❗ _Ignore the following if you are not going to implement this feature yourself._ ❗
         ### 𝟏 - If you want to implement this feature yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
-        - [ ] Wait for the status to be updated to `TODO` before you start the implementation.
+        - [ ] Set the appropriate _status_: BACKLOG (if ready) or CLARIFY (if still questions) or ACTIVE (if you're working on the implementation)
         - [ ] Create a branch (from the GitHub development panel on the right) and immediately create a Pull Request from that branch.
         ### 𝟐 - Implementation rules
         - [ ] Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
@@ -41,8 +35,7 @@ body:
         - [ ] Have you written documentation? Make sure anyone else working over your code can understand it.
         - [ ] Make sure to create a new issue for any future __expected__ improvment and reference this one in the new issue description.
         ### 𝟑 - Once done working on the implementation
-        - [ ] Rebase main in your branch (if needed).
-        - [ ] Request a maintainer review from the PR.
+        - [ ] Rebase main in your branch (if needed) and set it as _read for review_.
 
         </details>
   - type: markdown
@@ -90,8 +83,9 @@ body:
       value: |
         ## PRIORIZATION RULES - SCORING SYSTEM
         > [!NOTE]
-        > **Priority Formula** ➧ _impact * effort * complexity_  |  **Contribution Formula** ➧ _impact * 0.5 * complexity * (actually merged) effort_.
-        > Effort being computed this way: max(additions, deletions)
+        > __Priority Formula__ ➧ `impact * effort * complexity`
+        > __Contribution Formula__ ➧ `impact * 0.5 * complexity * (actually merged) effort`
+        > Effort being computed this way: `max(additions, deletions)`
   - type: dropdown
     id: impact
     attributes:
