@@ -1,0 +1,11 @@
+title: "[Question] "
+labels: ["Question"]
+body:
+  - type: input
+    id: relation
+    attributes:
+      label: À quelle thématique cette question est-elle liée ? Si aucune, laisser vide.
+  - type: textarea
+    id: elaborate
+    attributes:
+      label: Élaborez votre question.

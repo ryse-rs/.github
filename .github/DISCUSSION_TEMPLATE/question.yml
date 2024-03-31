@@ -1,0 +1,11 @@
+title: "[Question] "
+labels: ["Question"]
+body:
+  - type: input
+    id: relation
+    attributes:
+      label: Actual content this question is related to, if any
+  - type: textarea
+    id: elaborate
+    attributes:
+      label: Feel free to elaborate.

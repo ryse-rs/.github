@@ -1,0 +1,37 @@
+title: "[Proposal] "
+labels: ["Proposal"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Who would this proposal target? / Who would directly benefit from this proposal?
+      description: Please provide a qualified answer. `users` is not a qualified answer.
+      placeholder: The role - WHO
+    validations:
+      required: true
+  - type: textarea
+    id: added-value
+    attributes:
+      label: Which target audience needs would this proposal address? What is the expected added-value to the product?
+      description: This could include features, functionality, performance improvements, or any other outcomes that will directly impact their experience with the product.
+      placeholder: The motivation - WHY
+    validations:
+      required: true
+  - type: textarea
+    id: information
+    attributes:
+      label: Feel free to provide any additional information that could help us understand the context of this proposal.
+  - type: textarea
+    id: need
+    attributes:
+      label: Please try to provide an extensive list of elements or steps to achieve the goal. 
+      description: The need - WHAT. Note this list is expected to be regularly updated.
+      value: |
+        - ...
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: For developers - Feel free to provide your ideal implementation details. This will speed up the process.
+      placeholder: Structure content, Traits, patterns, relations between entities, etc.

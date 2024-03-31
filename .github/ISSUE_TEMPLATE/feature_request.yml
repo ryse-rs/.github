@@ -15,6 +15,7 @@ body:
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
 
         - [ ] Once you consider this issue ready to be processed, set its status to `PROCESS` and wait for the status to be updated to `BACKLOG` before you start the implementation.
+        - [ ] I'd like to implement this myself.
         
         <details>
         <summary>
@@ -27,7 +28,7 @@ body:
         ### 𝟏 - If you want to implement this feature yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
-        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `CLARIFY` (if still questions) or `ACTIVE` (if you're working on the implementation)
+        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `REFINE` (if not clear) or `ACTIVE` (if actually working on the implementation)
         - [ ] Create a branch (from the GitHub development panel on the right) and immediately create a Pull Request from that branch.
         ### 𝟐 - Implementation rules
         - [ ] Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
@@ -35,7 +36,9 @@ body:
         - [ ] Have you written documentation? Make sure anyone else working over your code can understand it.
         - [ ] Make sure to create a new issue for any future __expected__ improvment and reference this one in the new issue description.
         ### 𝟑 - Once done working on the implementation
-        - [ ] Rebase main in your branch (if needed) and set it as _read for review_.
+        - [ ] Create a Pull Request from your branch.
+        - [ ] Set the _status_ of the issue to `REVIEW`.
+        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 
         </details>
   - type: markdown
@@ -92,10 +95,10 @@ body:
       label: Impact
       description: How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
       options:
-        - I-1. Negligible impact | Benefits really few users
-        - I-2. Interesting feature | Benefits a fair proportion of users
-        - I-3. Non-blocking but essential feature | Every user will benefit from having this feature.
-        - I-4. This feature is a prerequisite for other essential features | Would have no user without this feature.
+        - I.1. Negligible impact | Benefits really few users
+        - I.2. Interesting feature | Benefits a fair proportion of users
+        - I.3. Non-blocking but essential feature | Every user will benefit from having this feature.
+        - I.4. This feature is a prerequisite for other essential features | Would have no user without this feature.
     validations:
       required: true
   - type: dropdown
@@ -104,10 +107,10 @@ body:
       label: Effort
       description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
       options:
-        - "E-1. -200 LoC"
-        - "E-2. -750 LoC"
-        - "E-3. -1k5 LoC"
-        - "E-4. +1k5 LoC"
+        - "E.1. -200 LoC"
+        - "E.2. -750 LoC"
+        - "E.3. -1k5 LoC"
+        - "E.4. +1k5 LoC"
     validations:
       required: true
   - type: dropdown
@@ -116,9 +119,9 @@ body:
       label: Complexity
       description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
       options:
-        - C-1. Easy. Use of brain cells is mostly null.
-        - C-2. Manageable. Will require hours of research / experimentation.
-        - C-3. Hard. Will require days of research / experimentation, __prior to implementation__.
-        - C-4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        - C.1. Easy. Use of brain cells is mostly null.
+        - C.2. Manageable. Will require hours of research / experimentation.
+        - C.3. Hard. Will require days of research / experimentation, __prior to implementation__.
+        - C.4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
     validations:
       required: true

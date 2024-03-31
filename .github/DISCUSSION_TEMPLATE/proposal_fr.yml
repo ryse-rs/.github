@@ -1,0 +1,42 @@
+title: "[Proposition] "
+labels: ["Proposal"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Qui serait directement concerné par cette proposition ? Qui bénéficierait directement de cette proposition ?
+      description: Veuillez fournir une réponse qualifiée. "Les utilisateurs" n'est pas une réponse qualifiée.
+      placeholder: Le rôle - QUI
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Détailler le contenu de la proposition.
+      description: Le besoin - QUOI. Peut-être une liste d'éléments.
+      placeholder: |
+        Développer une interface à destination des entreprises, comprenant:
+        - Gestion du compte: 
+          - une page de connexion
+          - une page de création de compte
+          - une page de récupération de mot de passe
+        - ...
+    validations:
+      required: true
+  - type: textarea
+    id: added-value
+    attributes:
+      label: À quels besoins de la cible cette proposition répondrait-elle ? Quelle serait la valeur-ajoutée pour le produit ?
+      description: Cela peut inclure des fonctionnalités, des améliorations de performance ou tout autre résultat qui aura un impact direct sur leur expérience avec le produit.
+      placeholder: La motivation - POURQUOI
+    validations:
+      required: true
+  - type: textarea
+    id: information
+    attributes:
+      label: N'hésitez pas à fournir des informations supplémentaires qui pourraient nous aider à comprendre le contexte de cette proposition.
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Pour les développeurs - N'hésitez pas à fournir des détails de mise en œuvre idéale. Cela accélérera le processus.
+      placeholder: Structure du contenu, traits, modèles, relations entre les entités, etc.
