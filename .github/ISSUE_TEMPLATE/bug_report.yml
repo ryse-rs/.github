@@ -15,7 +15,7 @@ body:
         > [!TIP]
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
 
-        - [ ] Once you consider this issue ready to be put in the BACKLOG, set its status to "PROCESS" and wait for the status to be updated to `BACKLOG` before you start the implementation.
+        - [ ] Once you consider this issue ready to be processed, set its status to `PROCESS` and wait for the status to be updated to `BACKLOG` before you start the implementation.
         
         <details>
         <summary>
@@ -28,7 +28,7 @@ body:
         ### 𝟏 - If you want to fix this yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
-        - [ ] Set the appropriate _status_: BACKLOG (if ready) or CLARIFY (if still questions) or ACTIVE (if you're working on the implementation)
+        - [ ] Set the appropriate _status_: `BACKLOG (if ready) or `CLARIFY` (if still questions) or `ACTIVE` (if you're working on the implementation)
         - [ ] Create a branch from the GitHub development panel and immediately create a Pull Request from that branch.
         ### 𝟐 - Implementation rules
         - [ ] To write down your design / implementation choices. What worked, what did not or would not, why you chose this over that.
