@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report following our methodology
-title: "[bug] ..."
+title: "[bug] "
 labels: ["bug"]
 projects: ["ryse-rs/2"]
 body:
@@ -51,9 +51,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: actual-behavior
+    id: current-behavior
     attributes:
-      label: Actual behavior
+      label: Current behavior
       description: A clear and concise description of what you're experiencing.
     validations:
       required: true
@@ -76,9 +76,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
+      label: Feel free to provide any relevant information
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
 
 # SCORING SYSTEM, COMMON TO ALL TEMPLATES
   - type: markdown

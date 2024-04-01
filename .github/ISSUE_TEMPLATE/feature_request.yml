@@ -1,6 +1,6 @@
 name: Feature Request
 description: Propose a new feature following our methodology
-title: "[feat] ..."
+title: "[feat] "
 labels: ["feature"]
 projects: ["ryse-rs/2"]
 body:

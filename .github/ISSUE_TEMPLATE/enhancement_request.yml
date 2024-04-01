@@ -1,6 +1,6 @@
 name: Enhancement Request
 description: Propose an improvement following our methodology
-title: "[enhance] _... the end goal_"
+title: "[enhance] "
 labels: ["enhancement"]
 projects: ["ryse-rs/2"]
 body:
