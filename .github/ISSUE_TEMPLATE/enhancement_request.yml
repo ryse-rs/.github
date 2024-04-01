@@ -52,16 +52,12 @@ body:
   - type: textarea
     id: current-situation
     attributes:
-      label: Describe the current situation and what could be improved.
-      description: Quickly define the current context, to help understand your proposal. Briefly describe what could be improved.
+      label: Describe the current situation and how it is an issue.
+      description: Quickly define the current context, to help understand your proposal.
       placeholder: |
         Example.
         Right now, `.env` does not set environment variables, the file is parsed as-is by the `serde-toml` crate dependency.
         But environment variables could help a lot with CI and containers, remove the need of a dependency, and (maybe) simplify code.
-      value: |
-        __The current situation__:
-        __The new situation__:
-        __The __:
     validations:
       required: true
   - type: input
