@@ -49,15 +49,25 @@ body:
     attributes:
       value: |
         # ENHANCEMENT REQUEST RULES
-  - type: textarea
+  - type: input
     id: current-situation
     attributes:
-      label: Describe the current situation and how it is an issue.
+      label: Describe the current situation.
       description: Quickly define the current context, to help understand your proposal.
       placeholder: |
         Example.
         Right now, `.env` does not set environment variables, the file is parsed as-is by the `serde-toml` crate dependency.
         But environment variables could help a lot with CI and containers, remove the need of a dependency, and (maybe) simplify code.
+    validations:
+      required: true
+  - type: input
+    id: issue
+    attributes:
+      label: Explain what your proposition is
+      description: Quickly express what you proposition is or how it is an issue.
+      placeholder: |
+        Example.
+        Environment variables could help a lot with CI and containers, remove the need of a dependency, and (maybe) simplify code.
     validations:
       required: true
   - type: input
