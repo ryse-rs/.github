@@ -1,12 +1,12 @@
-name: Feature Request
-description: Propose a new feature following our methodology
-title: "[feat] ..."
-labels: ["feature"]
+name: Enhancement Request
+description: Propose an improvement following our methodology
+title: "[enhance] ..."
+labels: ["enhancement"]
 projects: ["ryse-rs/2"]
 body:
   - type: markdown
     attributes:
-      value: |      
+      value: |
         ### Thanks for your contribution to enhancing this project. Your efforts are greatly appreciated. 🙏🏻
         > [!IMPORTANT]  
         > Please fill this form with care. Ready to process requests are prioritized.
@@ -24,8 +24,8 @@ body:
 
         </summary>
 
-        > ❗ _Ignore the following if you are not going to implement this feature yourself._ ❗
-        ### 𝟏 - If you want to implement this feature yourself
+        > ❗ _Ignore the following if you are not going to implement this enhancement yourself._ ❗
+        ### 𝟏 - If you want to implement this enhancement yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
         - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `REFINE` (if not clear) or `ACTIVE` (if actually working on the implementation)
@@ -46,20 +46,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        # FEATURE REQUEST RULES
-  - type: input
-    id: target
-    attributes:
-      label: Who does this feature target? / Who would directly benefit from this feature?
-      description: Please provide a qualified answer. `users` is not a qualified answer.
-      placeholder: The role - WHO
-    validations:
-      required: true
+        # ENHANCEMENT REQUEST RULES
   - type: textarea
     id: added-value
     attributes:
-      label: Which target audience needs does this feature address? What is the expected added-value to the product?
-      description: This could include features, functionality, performance improvements, or any other outcome that will directly impact their experience with the product.
+      label: Why do we need this enhancement? What is the expected added-value to the product?
+      description: This could include any outcome that will directly impact their experience with the product.
       placeholder: The motivation - WHY
     validations:
       required: true
@@ -75,7 +67,7 @@ body:
   - type: textarea
     id: information
     attributes:
-      label: Feel free to provide any additional information that could help us understand the context of this feature request.
+      label: Feel free to provide any additional information that could help us understand the context of this request.
   - type: textarea
     id: implementation
     attributes:
@@ -95,12 +87,12 @@ body:
     id: impact
     attributes:
       label: Impact
-      description: How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
+      description: How many users would benefit from this enhancement and how big would the impact be? `average(reach, impact)`
       options:
         - I.1. Negligible impact | Benefits really few users
-        - I.2. Interesting feature | Benefits a fair proportion of users
-        - I.3. Non-blocking but essential feature | Every user will benefit from having this feature.
-        - I.4. This feature is a prerequisite for other essential features | Would have no user without this feature.
+        - I.2. Interesting enhancement | Benefits a fair proportion of users
+        - I.3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+        - I.4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
     validations:
       required: true
   - type: dropdown

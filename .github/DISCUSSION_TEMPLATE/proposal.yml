@@ -13,7 +13,7 @@ body:
     id: added-value
     attributes:
       label: Which target audience needs would this proposal address? What is the expected added-value to the product?
-      description: This could include features, functionality, performance improvements, or any other outcomes that will directly impact their experience with the product.
+      description: This could include features, functionality, performance improvements, or any other outcome that will directly impact their experience with the product.
       placeholder: The motivation - WHY
     validations:
       required: true

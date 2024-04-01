@@ -21,24 +21,24 @@ body:
         <details>
         <summary>
           
-        ## RÈGLES POUR LES CONTRIBUTEURS - À l'attention de l'assigné
+        ## RÈGLES POUR LES CONTRIBUTEURS - À l'attention du développeur assigné
 
         </summary>
 
-        > ❗ _Ignorez ce qui suit si vous ne prévoyez pas de résoudre cela vous-même._ ❗
-        ### 𝟏 - Si vous souhaitez résoudre cela vous-même
-        - [ ] Vous attribuer vous-même le problème
-        - [ ] Proposer une solution dans la description / les commentaires du problème.
-        - [ ] Définir le _statut_ approprié : `BACKLOG` (si prêt) ou `REFINE` (si ce n'est pas clair) ou `ACTIVE` (si vous travaillez réellement sur la mise en œuvre)
-        - [ ] Créer une branche depuis le panneau de développement GitHub et commencer à travailler dessus.
-        ### 𝟐 - Règles de mise en œuvre
-        - [ ] Noter vos choix de conception / mise en œuvre. Ce qui a fonctionné, ce qui n'a pas fonctionné ou ne fonctionnerait pas, pourquoi vous avez choisi ceci plutôt que cela.
-        - [ ] Implémenter des tests unitaires et/ou d'intégration approfondis pour le code nouvellement ajouté et sécuriser la racine du problème actuel. Ou justifier pourquoi ils ne sont pas nécessaires dans les commentaires.
-        - [ ] Rédiger la documentation requise pour le code nouvellement ajouté.
-        ### 𝟑 - Une fois le travail de mise en œuvre terminé
-        - [ ] Créer une demande de pull depuis votre branche.
-        - [ ] Définir le _statut_ du problème sur `REVIEW`.
-        - [ ] Demander une revue à un mainteneur. Une fois la revue effectuée, effectuer un rebase de la branche principale sur votre branche (si nécessaire).
+        > ❗ _Ignorez ce qui suit si vous ne prévoyez pas d'implémenter cette correction vous-même._ ❗
+        ### 𝟏 - If you want to fix this yourself
+        - [ ] Self-assign the issue
+        - [ ] Propose a solution in the issue description / comments.
+        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `REFINE` (if not clear) or `ACTIVE` (if actually working on the implementation)
+        - [ ] Create a branch from the GitHub development panel and start working on it.
+        ### 𝟐 - Implementation rules
+        - [ ] To write down your design / implementation choices. What worked, what did not or would not, why you chose this over that.
+        - [ ] To implement extensive unit and/or integration tests to newly added code and to secure the root of the current issue. Or justify why they are not needed in the comments
+        - [ ] To write required documentation to newly added code
+        ### 𝟑 - Once done working on the implementation
+        - [ ] Create a Pull Request from your branch.
+        - [ ] Set the _status_ of the issue to `REVIEW`.
+        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 
         > _status_es: NEW REFINE PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED
 
@@ -102,26 +102,26 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: effort
-    attributes:
-      label: Effort
-      description: Sélectionnez le nombre estimé de lignes de code `max(ajouts, suppressions)`. Ne tenez pas compte de la complexité.
-      options:
-        - "E.1. -200 LdC"
-        - "E.2. -750 LdC"
-        - "E.3. -1k5 LdC"
-        - "E.4. +1k5 LdC"
-    validations:
-      required: true
-  - type: dropdown
     id: complexity
     attributes:
       label: Complexité
-      description: À quel point pensez-vous que la résolution du problème sera complexe ? Prenez en compte des facteurs tels que l'algorithmie, la difficulté et l'incertitude. Ne tenez pas compte du nombre de lignes de code.
+      description: À quel point pensez-vous que la résolution du problème sera complexe ? Prenez en compte des facteurs tels que l'algorithmie, l'exploration et l'incertitude. Ne tenez pas compte du nombre de lignes de code.
       options:
         - C.1. Facile. L'utilisation des cellules cérébrales est principalement nulle.
         - C.2. Gérable. Nécessitera des heures de recherche / expérimentation.
         - C.3. Difficile. Nécessitera des jours de recherche / expérimentation, __avant la mise en œuvre__.
         - C.4. Niveau de magie noire. Peut nécessiter des semaines de recherche / expérimentation, __avant la mise en œuvre__. Peut même être insoluble.
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      description: Pour les développeurs - Sélectionnez le nombre estimé de lignes de code `max(ajouts, suppressions)`. Ne tenez pas compte de la complexité.
+      options:
+        - "E.1. -200 LdC"
+        - "E.2. -750 LdC"
+        - "E.3. -1k5 LdC"
+        - "E.4. +1k5 LdC"
     validations:
       required: true

@@ -102,6 +102,18 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
+      options:
+        - C.1. Easy. Use of brain cells is mostly null.
+        - C.2. Manageable. Will require hours of research / experimentation.
+        - C.3. Hard. Will require days of research / experimentation, __prior to implementation__.
+        - C.4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+    validations:
+      required: true
+  - type: dropdown
     id: effort
     attributes:
       label: Effort
@@ -111,18 +123,6 @@ body:
         - "E.2. -750 LoC"
         - "E.3. -1k5 LoC"
         - "E.4. +1k5 LoC"
-    validations:
-      required: true
-  - type: dropdown
-    id: complexity
-    attributes:
-      label: Complexity
-      description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
-      options:
-        - C.1. Easy. Use of brain cells is mostly null.
-        - C.2. Manageable. Will require hours of research / experimentation.
-        - C.3. Hard. Will require days of research / experimentation, __prior to implementation__.
-        - C.4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
     validations:
       required: true
 
