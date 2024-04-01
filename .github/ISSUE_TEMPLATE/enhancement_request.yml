@@ -43,36 +43,52 @@ body:
         > _status_es: NEW REFINE PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED
 
         </details>
+
+
   - type: markdown
     attributes:
       value: |
         # ENHANCEMENT REQUEST RULES
-  - type: textarea
-    id: added-value
+  - type: input
+    id: current-vs-future
     attributes:
-      label: Why do we need this enhancement? What is the expected added-value to the product?
-      description: This could include any outcome that will directly impact their experience with the product.
-      placeholder: The motivation - WHY
+      label: Describe the current situation.
+      description: Quickly define the current context, to help understand your proposal.
+      placeholder: Example. `.env` file is parsed as-is by the `serde-toml` crate dependency.
+    validations:
+      required: true
+  - type: input
+    id: need
+    attributes:
+      label: Describe your proposition - the new situation
+      description: WHAT can be improved? Only describe the final state, not the process, not a comparison.
+      placeholder: Example. Use environment variables, which would be set using rust builtin .cargo/config.toml file.
     validations:
       required: true
   - type: textarea
     id: need
     attributes:
-      label: Please set up a complete task list.
-      description: The need - WHAT. Note this list is expected to be regularly updated.
+      label: Benefits over what we currently have
+      description: WHY should it be improved?
+      placeholder: |
+        ~ We could merge CLI parameters with current .env variables.
+        - We could set environment variables in a github actions context
+        - We could set environment variables in a docker context
+        - Bonus - one less dependency to use (removal of `serde-toml`)
       value: |
-        - [ ] ...
+        - ...
     validations:
       required: true
   - type: textarea
-    id: information
-    attributes:
-      label: Feel free to provide any additional information that could help us understand the context of this request.
-  - type: textarea
     id: implementation
     attributes:
-      label: Feel free to provide your ideal implementation details. This will speed up the process.
-      placeholder: Structure content, Traits, patterns, relations between entities, etc. 
+      label: HOW to achieve this? Implementation details
+      description: Feel free to provide implementation details. This will speed up the process.
+      placeholder: Structure content, Traits, patterns, relations between entities, etc.
+      value: |
+        ```rust
+        // code
+        ```
 
 # SCORING SYSTEM, COMMON TO ALL TEMPLATES
   - type: markdown
