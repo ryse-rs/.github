@@ -50,7 +50,7 @@ body:
       value: |
         # ENHANCEMENT REQUEST RULES
   - type: input
-    id: current-vs-future
+    id: current-situation
     attributes:
       label: Describe the current situation.
       description: Quickly define the current context, to help understand your proposal.
@@ -58,7 +58,7 @@ body:
     validations:
       required: true
   - type: input
-    id: need
+    id: new-situation
     attributes:
       label: Describe your proposition - the new situation
       description: WHAT can be improved? Only describe the final state, not the process, not a comparison.
@@ -66,7 +66,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: need
+    id: benefits
     attributes:
       label: Benefits over what we currently have
       description: WHY should it be improved?
