@@ -1,6 +1,6 @@
 name: Enhancement Request
 description: Propose an improvement following our methodology
-title: "[enhance] ..."
+title: "[enhance] _... the end goal_"
 labels: ["enhancement"]
 projects: ["ryse-rs/2"]
 body:
@@ -54,40 +54,26 @@ body:
     attributes:
       label: Describe the current situation.
       description: Quickly define the current context, to help understand your proposal.
-      placeholder: |
-        Example.
-        Right now, `.env` does not set environment variables, the file is parsed as-is by the `serde-toml` crate dependency.
-        But environment variables could help a lot with CI and containers, remove the need of a dependency, and (maybe) simplify code.
+      placeholder: Example. Right now, `.env` does not set environment variables, the file is parsed as-is by the `serde-toml` crate dependency.
     validations:
       required: true
   - type: input
     id: issue
     attributes:
-      label: Explain what your proposition is
-      description: Quickly express what you proposition is or how it is an issue.
-      placeholder: |
-        Example.
-        Environment variables could help a lot with CI and containers, remove the need of a dependency, and (maybe) simplify code.
+      label: Describe the new situation
+      placeholder: Example. Use environment variables
     validations:
       required: true
   - type: input
-    id: new-situation
+    id: why
     attributes:
-      label: Describe your proposition - the new situation
-      description: WHAT can be improved? Only describe the final state, not the process, not a comparison.
-      placeholder: Example. Use environment variables, which would be set using rust builtin .cargo/config.toml file.
-    validations:
-      required: true
-  - type: input
-    id: what
-    attributes:
-      label: What is the end goal?
-      description: What needs are you trying to fulfill? Do not describe the benefits, only the goal.
+      label: Why should we do that?
+      description: One sentence. What needs are you trying to fulfill? Do not describe the benefits, only the goal.
       placeholder: Example. Better integration with other tools and even within the program.
     validations:
       required: true
   - type: textarea
-    id: why
+    id: list
     attributes:
       label: List the benefits over what we currently have
       placeholder: |
