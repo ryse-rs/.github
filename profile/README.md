@@ -1,6 +1,10 @@
 Welcome visitor.
+
 There is not much here to see.
-This place may provide ideas, tools, products and services. It could even provide learning content to be shared.
+
+This place may provide ideas, tools, products and services.
+
+It could even provide learning content to be shared.
 
 # WHAT IS OUR VISION ABOUT SOFTWARE DEVELOPMENT?
 
