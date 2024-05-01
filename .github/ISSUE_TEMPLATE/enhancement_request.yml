@@ -75,21 +75,31 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## PRIORIZATION RULES - SCORING SYSTEM
+        #### PRIORIZATION RULES - SCORING SYSTEM
         > [!NOTE]
         > __Priority Formula__ ➧ `impact * effort * complexity`
         > __Contribution Formula__ ➧ `impact * 0.5 * complexity * (actually merged) effort`
         > Effort being computed this way: `max(additions, deletions)`
+
+        > [!IMPORTANT]
+        > **Impact** - *How many users would benefit from this enhancement and how big would the impact be? `average(reach, impact)`*
+        > I1. Negligible impact | Benefits really few users
+        > I2. Interesting enhancement | Benefits a fair proportion of users
+        > I3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+        > I4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+        >
+        > **COMPLEXITY** - *How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account*
+        > C1. Easy. Use of brain cells is mostly null.
+        > C2. Manageable. Will require hours of research / experimentation.
+        > C3. Hard. Will require days of research / experimentation, __prior to implementation__.
+        > C4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        >
+        > **EFFORT** - *Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.*
+        > E1. < 200 LoC | E2. < 750 LoC | E3. < 1k5 LoC | E4. >= 1k5 LoC
   - type: dropdown
     id: impact
     attributes:
       label: Impact
-      description: |
-        How many users would benefit from this enhancement and how big would the impact be? `average(reach, impact)`
-          - I1. Negligible impact | Benefits really few users
-          - I2. Interesting enhancement | Benefits a fair proportion of users
-          - I3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-          - I4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
       options:
         - I1
         - I2
@@ -101,12 +111,6 @@ body:
     id: complexity
     attributes:
       label: Complexity
-      description: |
-        How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
-          - C1. Easy. Use of brain cells is mostly null.
-          - C2. Manageable. Will require hours of research / experimentation.
-          - C3. Hard. Will require days of research / experimentation, __prior to implementation__.
-          - C4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
       options:
         - C1
         - C2
@@ -118,12 +122,6 @@ body:
     id: effort
     attributes:
       label: Effort
-      description: |
-        Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
-          - E1. -200 LoC
-          - E2. -750 LoC
-          - E3. -1k5 LoC
-          - E4. +1k5 LoC
       options:
         - E1
         - E2
