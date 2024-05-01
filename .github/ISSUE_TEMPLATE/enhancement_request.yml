@@ -1,5 +1,5 @@
 name: Enhancement Request
-description: Propose an improvement following our methodology
+description: Propose an improvement following our guidelines
 title: "[enhance] "
 labels: ["enhancement"]
 projects: ["ryse-rs/2"]
@@ -7,8 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Thanks for your contribution to enhancing this project. Your efforts are greatly appreciated. 🙏🏻
+        Thank you for contributing to this project! Your efforts are greatly appreciated. 🙏🏻
         > [!IMPORTANT]  
+        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
         > Please fill this form with care. Ready to process requests are prioritized.
 
         > [!TIP]
@@ -18,37 +19,28 @@ body:
         - [ ] I'd like to implement this myself.
         
         <details>
-        <summary>
-
-        ## CONTRIBUTOR RULES - To the attention of the assignee
-
-        </summary>
+        <summary>CONTRIBUTOR RULES - To the attention of the assignee</summary>
 
         > ❗ _Ignore the following if you are not going to implement this enhancement yourself._ ❗
-        ### 𝟏 - If you want to implement this enhancement yourself
-        - [ ] Self-assign the issue
-        - [ ] Propose a solution in the issue description / comments.
-        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `REFINE` (if not clear) or `ACTIVE` (if actually working on the implementation)
-        - [ ] Create a branch from the GitHub development panel and start working on it.
-        ### 𝟐 - Implementation rules
-        - [ ] Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
-        - [ ] Have you implemented unit and/or integration tests? Or justify why they are not needed in the comments.
-        - [ ] Have you written documentation? Make sure anyone else working over your code can understand it.
-        - [ ] Make sure to create a new issue for any future __expected__ improvement and reference this one in the new issue description.
-        ### 𝟑 - Once done working on the implementation
-        - [ ] Create a Pull Request from your branch.
-        - [ ] Set the _status_ of the issue to `REVIEW`.
-        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
+        ##### 𝟏 - If you want to implement this enhancement yourself
+          - [ ] Self-assign the issue
+          - [ ] Propose a solution in the issue description / comments.
+          - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `REFINE` (if not clear) or `ACTIVE` (if actually working on the implementation)
+          - [ ] Create a branch from the GitHub development panel and start working on it.
+        ##### 𝟐 - Implementation rules
+          - [ ] Have your design / implementation choices been written down in comments? What worked, what did not or would not, why you chose this over that.
+          - [ ] Have you implemented unit and/or integration tests? Or justify why they are not needed in the comments.
+          - [ ] Have you written documentation? Make sure anyone else working over your code can understand it.
+          - [ ] Make sure to create a new issue for any future __expected__ improvement and reference this one in the new issue description.
+        ##### 𝟑 - Once done working on the implementation
+          - [ ] Create a Pull Request from your branch.
+          - [ ] Set the _status_ of the issue to `REVIEW`.
+          - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 
-        > _status_es: NEW REFINE PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED
+        *status*es: [ NEW REFINE REOPENED PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED ]
 
         </details>
 
-
-  - type: markdown
-    attributes:
-      value: |
-        # ENHANCEMENT REQUEST RULES
   - type: input
     id: current-situation
     attributes:
@@ -58,40 +50,29 @@ body:
     validations:
       required: true
   - type: input
-    id: issue
+    id: need
     attributes:
-      label: Describe the new situation
-      placeholder: Example. Use environment variables
-    validations:
-      required: true
-  - type: input
-    id: why
-    attributes:
-      label: Why should we do that?
-      description: One sentence. What needs are you trying to fulfill? Do not describe the benefits, only the goal.
-      placeholder: Example. Better integration with other tools and even within the program.
+      label: What needs are you trying to fulfill?
+      placeholder: One sentence. Describe the new situation. Your proposal.
     validations:
       required: true
   - type: textarea
-    id: list
+    id: why
     attributes:
-      label: List the benefits over what we currently have
+      label: Why should we do that?
+      description:  What are the benefits?
       placeholder: |
-        ~ We could merge CLI parameters with current .env variables.
-        - We could set environment variables in a github actions context
-        - We could set environment variables in a docker context
-        - Bonus - one less dependency to use (removal of `serde-toml`)
+        _Goal_:
+
+        _Benefits_:
+        - 
     validations:
       required: true
   - type: textarea
     id: implementation
     attributes:
-      label: HOW to achieve this? Implementation details
+      label: How can we achieve this?
       description: Feel free to provide implementation details. This will speed up the process.
-      value: |
-        ```rust
-        // Structure content, Traits, patterns, relations between entities, etc.
-        ```
 
 # SCORING SYSTEM, COMMON TO ALL TEMPLATES
   - type: markdown
@@ -106,35 +87,50 @@ body:
     id: impact
     attributes:
       label: Impact
-      description: How many users would benefit from this enhancement and how big would the impact be? `average(reach, impact)`
+      description: |
+        How many users would benefit from this enhancement and how big would the impact be? `average(reach, impact)`
+          - I1. Negligible impact | Benefits really few users
+          - I2. Interesting enhancement | Benefits a fair proportion of users
+          - I3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+          - I4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
       options:
-        - I.1. Negligible impact | Benefits really few users
-        - I.2. Interesting enhancement | Benefits a fair proportion of users
-        - I.3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-        - I.4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+        - I1
+        - I2
+        - I3
+        - I4
     validations:
       required: true
   - type: dropdown
     id: complexity
     attributes:
       label: Complexity
-      description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
+      description: |
+        How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
+          - C1. Easy. Use of brain cells is mostly null.
+          - C2. Manageable. Will require hours of research / experimentation.
+          - C3. Hard. Will require days of research / experimentation, __prior to implementation__.
+          - C4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
       options:
-        - C.1. Easy. Use of brain cells is mostly null.
-        - C.2. Manageable. Will require hours of research / experimentation.
-        - C.3. Hard. Will require days of research / experimentation, __prior to implementation__.
-        - C.4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        - C1
+        - C2
+        - C3
+        - C4
     validations:
       required: true
   - type: dropdown
     id: effort
     attributes:
       label: Effort
-      description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+      description: |
+        Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+          - E1. -200 LoC
+          - E2. -750 LoC
+          - E3. -1k5 LoC
+          - E4. +1k5 LoC
       options:
-        - "E.1. -200 LoC"
-        - "E.2. -750 LoC"
-        - "E.3. -1k5 LoC"
-        - "E.4. +1k5 LoC"
+        - E1
+        - E2
+        - E3
+        - E4
     validations:
       required: true

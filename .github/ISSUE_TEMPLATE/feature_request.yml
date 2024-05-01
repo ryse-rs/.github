@@ -7,8 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |      
-        ### Thanks for your contribution to enhancing this project. Your efforts are greatly appreciated. 🙏🏻
+        Thank you for contributing to enhancing this project! Your efforts are greatly appreciated. 🙏🏻
         > [!IMPORTANT]  
+        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
         > Please fill this form with care. Ready to process requests are prioritized.
 
         > [!TIP]
@@ -18,11 +19,7 @@ body:
         - [ ] I'd like to implement this myself.
         
         <details>
-        <summary>
-
-        ## CONTRIBUTOR RULES - To the attention of the assignee
-
-        </summary>
+        <summary>CONTRIBUTOR RULES - To the attention of the assignee</summary>
 
         > ❗ _Ignore the following if you are not going to implement this feature yourself._ ❗
         ### 𝟏 - If you want to implement this feature yourself
@@ -40,13 +37,10 @@ body:
         - [ ] Set the _status_ of the issue to `REVIEW`.
         - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 
-        > _status_es: NEW REFINE PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED
+        *status*es: [ NEW REFINE REOPENED PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED ]
 
         </details>
-  - type: markdown
-    attributes:
-      value: |
-        # FEATURE REQUEST RULES
+  
   - type: input
     id: target
     attributes:
@@ -95,35 +89,50 @@ body:
     id: impact
     attributes:
       label: Impact
-      description: How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
+      description: |
+        How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
+          - I1. Negligible impact | Benefits really few users
+          - I2. Interesting feature | Benefits a fair proportion of users
+          - I3. Non-blocking but essential feature | Every user will benefit from having this feature.
+          - I4. This feature is a prerequisite for other essential enhancements | Would have no user without this feature.
       options:
-        - I.1. Negligible impact | Benefits really few users
-        - I.2. Interesting feature | Benefits a fair proportion of users
-        - I.3. Non-blocking but essential feature | Every user will benefit from having this feature.
-        - I.4. This feature is a prerequisite for other essential features | Would have no user without this feature.
+        - I1
+        - I2
+        - I3
+        - I4
     validations:
       required: true
   - type: dropdown
     id: complexity
     attributes:
       label: Complexity
-      description: How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
+      description: |
+        How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account
+          - C1. Easy. Use of brain cells is mostly null.
+          - C2. Manageable. Will require hours of research / experimentation.
+          - C3. Hard. Will require days of research / experimentation, __prior to implementation__.
+          - C4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
       options:
-        - C.1. Easy. Use of brain cells is mostly null.
-        - C.2. Manageable. Will require hours of research / experimentation.
-        - C.3. Hard. Will require days of research / experimentation, __prior to implementation__.
-        - C.4. Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
+        - C1
+        - C2
+        - C3
+        - C4
     validations:
       required: true
   - type: dropdown
     id: effort
     attributes:
       label: Effort
-      description: Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+      description: |
+        Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+          - E1. -200 LoC
+          - E2. -750 LoC
+          - E3. -1k5 LoC
+          - E4. +1k5 LoC
       options:
-        - "E.1. -200 LoC"
-        - "E.2. -750 LoC"
-        - "E.3. -1k5 LoC"
-        - "E.4. +1k5 LoC"
+        - E1
+        - E2
+        - E3
+        - E4
     validations:
       required: true
