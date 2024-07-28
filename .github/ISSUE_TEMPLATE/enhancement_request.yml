@@ -47,10 +47,10 @@ body:
     validations:
       required: true
   - type: input
-    id: need
+    id: new-situation
     attributes:
-      label: What needs are you trying to fulfill?
-      placeholder: One sentence. Describe the new situation. Your proposal.
+      label: Describe the new situation.
+      placeholder: One sentence. Your proposal. What needs are you trying to fulfill?
     validations:
       required: true
   - type: textarea
@@ -58,13 +58,6 @@ body:
     attributes:
       label: Why should we do that?
       description:  What are the benefits?
-      placeholder: |
-        _Goal_:
-
-        _Benefits_:
-        - 
-    validations:
-      required: true
   - type: textarea
     id: implementation
     attributes:
