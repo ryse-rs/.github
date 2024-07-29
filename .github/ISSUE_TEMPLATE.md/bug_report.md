@@ -1,19 +1,34 @@
+<!-- Thank you for your hawk eye 🙏🏻 -->
+
 ## **What** is the issue?
 
 <!--
+FILL ME
 Expected behaviour vs Current behaviour.
 -->
 
 ## Steps to reproduce
 
+<!--
+FILL ME
+-->
+
 ## Relevant information about your environment
 
+<!--
+FILL ME
 (e.g. browser, OS, versions of rust, tools, logs, etc.)
+-->
 
 ## **How** can we fix it?
 
 <!--
+FILL ME
 Feel free to provide implementation details. This will speed up the process.
+-->
+
+<!--
+SUBMIT ME then update at least priorities
 -->
 
 ## Priority - Score
@@ -72,14 +87,14 @@ POST ISSUE SUBMISSION
 - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
 - [ ] Create a branch from the GitHub development panel and start working on it.
 
-#### 𝟐 - On Code
+#### 2 - On Code
 
 - [ ] Write design / implementation choices down in comments.
 - [ ] Unit and/or integration tests? Or justify why not in comments.
 - [ ] Documentation. Make sure anyone else working over your code can understand it.
 - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
 
-#### 𝟑 - On Github
+#### 3 - On Github
 
 - [ ] Create a Pull Request from your branch.
 - [ ] Set the _status_ of the issue to `REVIEW`.

@@ -1,23 +1,28 @@
-<!--
-Thank you for your passion 🙏🏻 Please fill with care.
--->
+<!-- Thank you for your passion 🙏🏻 -->
 
 ## **What** addition are you proposing?
 
 <!--
+FILL ME
 Current situation vs new situation. Context, to help understand your proposal.
 -->
 
 ## **Why** should we do that?
 
 <!--
+FILL ME
 What would be the benefits?
 -->
 
 ## **How** can we achieve this?
 
 <!--
+FILL ME
 Feel free to provide implementation details. This will speed up the process.
+-->
+
+<!--
+SUBMIT ME then update at least priorities
 -->
 
 ## Priority - Score
@@ -76,14 +81,14 @@ POST ISSUE SUBMISSION
 - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
 - [ ] Create a branch from the GitHub development panel and start working on it.
 
-#### 𝟐 - On Code
+#### 2 - On Code
 
 - [ ] Write design / implementation choices down in comments.
 - [ ] Unit and/or integration tests? Or justify why not in comments.
 - [ ] Documentation. Make sure anyone else working over your code can understand it.
 - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
 
-#### 𝟑 - On Github
+#### 3 - On Github
 
 - [ ] Create a Pull Request from your branch.
 - [ ] Set the _status_ of the issue to `REVIEW`.
