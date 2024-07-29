@@ -38,30 +38,24 @@ body:
 
         </details>
 
-  - type: input
-    id: current-situation
+  - type: textarea
+    id: what
     attributes:
-      label: Describe the current situation.
-      description: Quickly define the current context, to help understand your proposal.
-      placeholder: Example. Right now, `.env` does not set environment variables, the file is parsed as-is by the `serde-toml` crate dependency.
-    validations:
-      required: true
-  - type: input
-    id: new-situation
-    attributes:
-      label: Describe the new situation.
-      placeholder: One sentence. Your proposal. What needs are you trying to fulfill?
+      label: __What__ would change with enhancement?
+      description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: Why should we do that?
-      description:  What are the benefits?
+      label: __Why__ should we do that?
+      description:  What would be the benefits?
+    validations:
+      required: true
   - type: textarea
     id: implementation
     attributes:
-      label: How can we achieve this?
+      label: __How__ can we achieve this?
       description: Feel free to provide implementation details. This will speed up the process.
 
 # SCORING SYSTEM, COMMON TO ALL TEMPLATES
@@ -94,10 +88,10 @@ body:
     attributes:
       label: Impact
       options:
-        - I1
-        - I2
-        - I3
-        - I4
+        - I1 - Negligible impact | Benefits really few users
+        - I2 - Interesting enhancement | Benefits a fair proportion of users
+        - I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+        - I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
     validations:
       required: true
   - type: dropdown
@@ -105,10 +99,10 @@ body:
     attributes:
       label: Complexity
       options:
-        - C1
-        - C2
-        - C3
-        - C4
+        - C1 - Easy. Use of brain cells is mostly null.
+        - C2 - Manageable. Will require hours of research / experimentation.
+        - C3 - Hard. Will require days of research / experimentation, __prior to implementation__.
+        - C4 - Black Magic level. May require weeks of research / experimentation, __prior to implementation__. May even be unsolvable.
     validations:
       required: true
   - type: dropdown
@@ -116,9 +110,9 @@ body:
     attributes:
       label: Effort
       options:
-        - E1
-        - E2
-        - E3
-        - E4
+        - E1 - < 200 LoC
+        - E2 - < 750 LoC
+        - E3 - < 1k5 LoC
+        - E4 - >= 1k5 LoC
     validations:
       required: true
