@@ -1,41 +1,41 @@
-name: Bug Report
-description: Hunt down one more bug! Please fill with care. 🐞
-title: "[bug] "
-labels: ["bug"]
+name: Feature Request
+description: Thank you for contributing! Your passion is greatly appreciated. 🙏🏻
+title: "[feat] "
+labels: ["feature"]
 projects: ["ryse-rs/2"]
-body: 
+body:
   - type: markdown
     attributes:
-      value: |
+      value: |      
         > [!IMPORTANT]
-        > Thank you for your hawk eye 🙏🏻
+        > Thank you for your passion 🙏🏻
         > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        > Please fill this form with care. Ready to process reports are prioritized.
+        > Please fill this form with care. Ready to process requests are prioritized.
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
 
-  - type: textarea
+  - type: input
     id: what
     attributes:
-      label: __What__ is the issue?
-      description: Expected behaviour vs Current behaviour.
+      label: _What_ addition are you proposing?
+      description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
   - type: textarea
-    id: steps-to-reproduce
+    id: why
     attributes:
-      label: Steps to reproduce
+      label: _Why_ should we do that?
+      description: Who needs it? What pain does it solve?
     validations:
       required: true
-  - type: input
-    id: context
-    attributes:
-      label: Environment
-      description: Relevant information about your environment (e.g. browser, OS, versions of rust, tool, etc.).
   - type: textarea
-    id: how
+    id: need
     attributes:
-      label: __How__ can we fix it?
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: _How_ can we achieve this?
+      description: Feel free to provide implementation details. This will speed up the process.
+      value: |
+        - [ ] ...
+    validations:
+      required: true
 
   - type: textarea
     id: markdown
@@ -46,12 +46,12 @@ body:
 
         ### Impact
 
-        _How many users are affected and how severe is the impact? (`average(reach, impact)`)_
+        _How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
 
-        - [ ] I1 - Negligible impact | Affects really few users
-        - [ ] I2 - Affects a specific part of the application, but not critical | Affects a small number of users
-        - [ ] I3 - Affects a core part of the application | Affects a large number of users
-        - [ ] I4 - Nothing works | Every user is affected
+        - [ ] I1 - Negligible impact | Benefits really few users
+        - [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
+        - [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+        - [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
 
         ### Complexity
 
