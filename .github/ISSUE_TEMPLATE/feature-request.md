@@ -1,3 +1,11 @@
+---
+name: Feature request
+about: More shiny stuff! Please fill with care.
+title: "[FEAT]"
+labels: feature
+assignees: ""
+---
+
 <!-- Thank you for your passion 🙏🏻 -->
 
 ## **What** addition are you proposing?

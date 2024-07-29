@@ -1,28 +1,20 @@
-<!-- Thank you for your dedication 🙏🏻 -->
+---
+name: Basic issue for simple immediate changes. Self-assigned
+about: doc + test + minor + immediate changes only! Self-assigned.
+title: ""
+labels: ""
+assignees: ""
+---
 
-## **What** change are you proposing?
+## **What** are you proposing?
 
 <!--
-FILL ME
 Current situation vs new situation. Context, to help understand your proposal.
--->
-
-## **Why** should we do that?
-
-<!--
-FILL ME
-What would be the benefits?
--->
-
-## **How** can we achieve this?
-
-<!--
-FILL ME
-Feel free to provide implementation details. This will speed up the process.
+You can submit after filling this field.
 -->
 
 <!--
-SUBMIT ME then update at least priorities
+SUBMIT ME then check at least priorities, assign this request to yourself, and proceed immediately
 -->
 
 ## Priority - Score
@@ -31,16 +23,13 @@ SUBMIT ME then update at least priorities
 
 _How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
 
-- [ ] I1 - Negligible impact | Benefits really few users
-- [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
-- [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-- [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+- [ x ] I1 - Negligible impact | Benefits really few users
 
 ### Complexity
 
 _How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account_.
 
-- [ ] C1 - Easy. Use of brain cells is mostly null.
+- [ x ] C1 - Easy. Use of brain cells is mostly null.
 - [ ] C2 - Manageable. Will require hours of research / experimentation.
 - [ ] C3 - Hard. Will require days of research / experimentation, **prior to implementation**.
 - [ ] C4 - Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
@@ -49,7 +38,7 @@ _How complex do you think the problem resolution will be? Consider factors such 
 
 _Select the estimated number of lines of code (`max(additions, deletions)`). Do not take complexity into account._
 
-- [ ] E1 - < 200 LoC
+- [ x ] E1 - < 200 LoC
 - [ ] E2 - < 750 LoC
 - [ ] E3 - < 1k5 LoC
 - [ ] E4 - >= 1k5 LoC
@@ -66,14 +55,6 @@ POST ISSUE SUBMISSION
 > Please fill this form with care. Ready to process requests are prioritized.
 > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
 
-### To the attention of the request author
-
-- [ ] Ready to be processed by a maintainer?
-      Set its status to `PROCESS` and wait for the status to be updated to `BACKLOG`.
-- [ ] I'd like to implement this myself.
-
-### To the attention of the assignee
-
 #### 1 - On Github
 
 - [ ] Self-assign the issue
@@ -81,14 +62,14 @@ POST ISSUE SUBMISSION
 - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
 - [ ] Create a branch from the GitHub development panel and start working on it.
 
-#### 2 - On Code
+#### 𝟐 - On Code
 
 - [ ] Write design / implementation choices down in comments.
 - [ ] Unit and/or integration tests? Or justify why not in comments.
 - [ ] Documentation. Make sure anyone else working over your code can understand it.
 - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
 
-#### 3 - On Github
+#### 𝟑 - On Github
 
 - [ ] Create a Pull Request from your branch.
 - [ ] Set the _status_ of the issue to `REVIEW`.

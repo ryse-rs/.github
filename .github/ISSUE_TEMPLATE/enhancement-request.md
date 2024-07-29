@@ -1,26 +1,28 @@
-<!-- Thank you for your hawk eye 🙏🏻 -->
+---
+name: Enhancement request
+about: Some improvement suggestions are always welcome! Please fill with care.
+title: "[ENHANCE]"
+labels: upgrade
+assignees: ""
+---
 
-## **What** is the issue?
+<!-- Thank you for your dedication 🙏🏻 -->
 
-<!--
-FILL ME
-Expected behaviour vs Current behaviour.
--->
-
-## Steps to reproduce
-
-<!--
-FILL ME
--->
-
-## Relevant information about your environment
+## **What** change are you proposing?
 
 <!--
 FILL ME
-(e.g. browser, OS, versions of rust, tools, logs, etc.)
+Current situation vs new situation. Context, to help understand your proposal.
 -->
 
-## **How** can we fix it?
+## **Why** should we do that?
+
+<!--
+FILL ME
+What would be the benefits?
+-->
+
+## **How** can we achieve this?
 
 <!--
 FILL ME
@@ -35,12 +37,12 @@ SUBMIT ME then update at least priorities
 
 ### Impact
 
-_How many users are affected and how severe is the impact? (`average(reach, impact)`)_
+_How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
 
-- [ ] I1 - Negligible impact | Affects really few users
-- [ ] I2 - Affects a specific part of the application, but not critical | Affects a small number of users
-- [ ] I3 - Affects a core part of the application | Affects a large number of users
-- [ ] I4 - Nothing works | Every user is affected
+- [ ] I1 - Negligible impact | Benefits really few users
+- [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
+- [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+- [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
 
 ### Complexity
 
