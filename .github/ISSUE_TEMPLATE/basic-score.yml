@@ -88,7 +88,6 @@ body:
         3. < 1k5 LoC
         4. \> 1k5 LoC
 
-        > [!NOTE]
         > **Priority Formula** ➧ `impact * effort * complexity` > **Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
         > Effort being computed this way: `max(additions, deletions)`
 
