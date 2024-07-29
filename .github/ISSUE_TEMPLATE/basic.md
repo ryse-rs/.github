@@ -76,4 +76,4 @@ POST ISSUE SUBMISSION
 - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 - [ ] Set the _status_ of the issue to `DONE`.
 
-*status*es: [ `NEW PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+*status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]

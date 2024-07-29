@@ -12,14 +12,14 @@ body:
         > Please fill this form with care. Ready to process reports are prioritized.
         > If you have any questions or need guidance, feel free to add related labels and ping a maintainer
 
-        - [ ] Once you consider this issue ready to be processed, set its _status_ to `PROCESS` and wait for the status to be updated to `BACKLOG` before you start the implementation.
+        - [ ] Ask a maintainer to consider adding it to the `BACKLOG`.
         - [ ] I'd like to fix this myself.
 
         <details>
         <summary>CONTRIBUTOR RULES - To the attention of the assignee</summary>
 
         > ❗ _Ignore the following if you are not going to fix this yourself._ ❗
-        ### 𝟏 - If you want to fix this yourself
+        ### 1 - If you want to fix this yourself
         - [ ] Self-assign the issue
         - [ ] Propose a solution in the issue description / comments.
         - [ ] Set the appropriate _status_: `BACKLOG` or `ACTIVE` (if actually working on the implementation)
@@ -33,7 +33,7 @@ body:
         - [ ] Set the _status_ of the issue to `REVIEW`.
         - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 
-        *status*es: [ NEW REOPENED PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED ]
+        *status*es: [ NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED ]
 
         </details>
   

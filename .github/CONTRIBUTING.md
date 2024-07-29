@@ -4,7 +4,7 @@ To the attention of the assignee
 
 ## About new features and enhancements submissions
 
-### 𝟏 - If you want to implement this enhancement yourself
+### 1 - If you want to implement this enhancement yourself
 
 - Self-assign the issue
 - Propose a solution in the issue description / comments.
@@ -26,7 +26,7 @@ To the attention of the assignee
 
 ## About bugs submissions
 
-### 𝟏 - If you want to fix this yourself
+### 1 - If you want to fix this yourself
 
 - Self-assign the issue
 - Propose a solution in the issue description / comments.

@@ -1,10 +1,9 @@
 ---
 name: Basic issue for simple changes. Self-assigned
 about: doc + test + minor changes only! Self-assigned.
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 ## **What** are you proposing?
@@ -73,4 +72,4 @@ POST ISSUE SUBMISSION
 - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 - [ ] Set the _status_ of the issue to `DONE`.
 
-*status*es: [ `NEW PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+*status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]

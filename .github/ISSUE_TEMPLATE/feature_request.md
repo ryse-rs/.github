@@ -3,8 +3,7 @@ name: Feature request
 about: More shiny stuff! Please fill with care.
 title: "[FEAT]"
 labels: feature
-assignees: ''
-
+assignees: ""
 ---
 
 <!--
@@ -72,8 +71,7 @@ POST ISSUE SUBMISSION
 
 ### To the attention of the request author
 
-- [ ] Ready to be processed by a maintainer?
-      Set its status to `PROCESS` and wait for the status to be updated to `BACKLOG`.
+- [ ] Ask a maintainer to consider adding it to the `BACKLOG`.
 - [ ] I'd like to implement this myself.
 
 ### To the attention of the assignee
@@ -99,4 +97,4 @@ POST ISSUE SUBMISSION
 - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
 - [ ] Set the _status_ of the issue to `DONE`.
 
-*status*es: [ `NEW PROCESS BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+*status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
