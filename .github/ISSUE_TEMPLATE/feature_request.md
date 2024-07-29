@@ -3,34 +3,30 @@ name: Feature request
 about: More shiny stuff! Please fill with care.
 title: "[FEAT]"
 labels: feature
-assignees: ""
+assignees: ''
+
 ---
 
-<!-- Thank you for your passion 🙏🏻 -->
+<!--
+Thank you for your passion 🙏🏻 Please fill with care.
+-->
 
 ## **What** addition are you proposing?
 
 <!--
-FILL ME
 Current situation vs new situation. Context, to help understand your proposal.
 -->
 
 ## **Why** should we do that?
 
 <!--
-FILL ME
 What would be the benefits?
 -->
 
 ## **How** can we achieve this?
 
 <!--
-FILL ME
 Feel free to provide implementation details. This will speed up the process.
--->
-
-<!--
-SUBMIT ME then update at least priorities
 -->
 
 ## Priority - Score

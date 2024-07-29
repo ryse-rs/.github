@@ -1,48 +1,40 @@
 ---
-name: Feature request
-about: More shiny stuff! Please fill with care.
-title: "[FEAT]"
-labels: feature
-assignees: ""
+name: Bug report
+about: Hunt down one more bug! Please fill with care.
+title: "[BUG]"
+labels: bug
+assignees: ''
+
 ---
 
-<!-- Thank you for your passion 🙏🏻 -->
-
-## **What** addition are you proposing?
+## **What** is the issue?
 
 <!--
-FILL ME
-Current situation vs new situation. Context, to help understand your proposal.
+Expected behaviour vs Current behaviour.
 -->
 
-## **Why** should we do that?
+## Steps to reproduce
+
+## Relevant information about your environment
+
+(e.g. browser, OS, versions of rust, tools, logs, etc.)
+
+## **How** can we fix it?
 
 <!--
-FILL ME
-What would be the benefits?
--->
-
-## **How** can we achieve this?
-
-<!--
-FILL ME
 Feel free to provide implementation details. This will speed up the process.
--->
-
-<!--
-SUBMIT ME then update at least priorities
 -->
 
 ## Priority - Score
 
 ### Impact
 
-_How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
+_How many users are affected and how severe is the impact? (`average(reach, impact)`)_
 
-- [ ] I1 - Negligible impact | Benefits really few users
-- [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
-- [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-- [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+- [ ] I1 - Negligible impact | Affects really few users
+- [ ] I2 - Affects a specific part of the application, but not critical | Affects a small number of users
+- [ ] I3 - Affects a core part of the application | Affects a large number of users
+- [ ] I4 - Nothing works | Every user is affected
 
 ### Complexity
 
@@ -89,14 +81,14 @@ POST ISSUE SUBMISSION
 - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
 - [ ] Create a branch from the GitHub development panel and start working on it.
 
-#### 2 - On Code
+#### 𝟐 - On Code
 
 - [ ] Write design / implementation choices down in comments.
 - [ ] Unit and/or integration tests? Or justify why not in comments.
 - [ ] Documentation. Make sure anyone else working over your code can understand it.
 - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
 
-#### 3 - On Github
+#### 𝟑 - On Github
 
 - [ ] Create a Pull Request from your branch.
 - [ ] Set the _status_ of the issue to `REVIEW`.
