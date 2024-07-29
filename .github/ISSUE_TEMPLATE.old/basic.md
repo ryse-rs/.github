@@ -23,13 +23,16 @@ SUBMIT ME then check at least priorities, assign this request to yourself, and p
 
 _How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
 
-- [ x ] I1 - Negligible impact | Benefits really few users
+- [x] I1 - Negligible impact | Benefits really few users
+- [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
+- [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+- [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
 
 ### Complexity
 
 _How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account_.
 
-- [ x ] C1 - Easy. Use of brain cells is mostly null.
+- [x] C1 - Easy. Use of brain cells is mostly null.
 - [ ] C2 - Manageable. Will require hours of research / experimentation.
 - [ ] C3 - Hard. Will require days of research / experimentation, **prior to implementation**.
 - [ ] C4 - Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
@@ -38,7 +41,7 @@ _How complex do you think the problem resolution will be? Consider factors such 
 
 _Select the estimated number of lines of code (`max(additions, deletions)`). Do not take complexity into account._
 
-- [ x ] E1 - < 200 LoC
+- [x] E1 - < 200 LoC
 - [ ] E2 - < 750 LoC
 - [ ] E3 - < 1k5 LoC
 - [ ] E4 - >= 1k5 LoC
