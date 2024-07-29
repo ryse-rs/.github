@@ -28,11 +28,38 @@ body:
   - type: textarea
     id: markdown
     attributes:
-      label: POST SUBMIT
+      label: Issue State Tracker
       value: |
+        > [!IMPORTANT]
+        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+        > Please fill this form with care. Ready to process requests are prioritized.
+        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
+
+        #### 1 - On Github
+
+        - [ ] Self-assign the issue
+        - [ ] Propose a solution in the issue description / comments.
+        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
+        - [ ] Create a branch from the GitHub development panel and start working on it.
+
+        #### 2 - On Code
+
+        - [ ] Write design / implementation choices down in comments.
+        - [ ] Unit and/or integration tests? Or justify why not in comments.
+        - [ ] Documentation. Make sure anyone else working over your code can understand it.
+        - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
+
+        #### 3 - On Github
+
+        - [ ] Create a Pull Request from your branch.
+        - [ ] Set the _status_ of the issue to `REVIEW`.
+        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
+        - [ ] Set the _status_ of the issue to `DONE`.
+
+        *status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+
         <details>
-        <summary>Priority - helper</summary>
-        ## Priority - Score
+        <summary>SCORING SYSTEM HELPER</summary>
 
         ### Impact
 
@@ -56,41 +83,13 @@ body:
 
         _Select the estimated number of lines of code (`max(additions, deletions)`). Do not take complexity into account._
 
-        1. - < 200 LoC
-        2. - < 750 LoC
-        3. - < 1k5 LoC
-        4. - >= 1k5 LoC
+        1. < 200 LoC
+        2. < 750 LoC
+        3. < 1k5 LoC
+        4. >= 1k5 LoC
 
         > [!NOTE] > **Priority Formula** ➧ `impact * effort * complexity` > **Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
         > Effort being computed this way: `max(additions, deletions)`
-
-        *status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
         </details>
-
-        > [!IMPORTANT]
-        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        > Please fill this form with care. Ready to process requests are prioritized.
-        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
-
-        #### 1 - On Github
-
-        - [ ] Self-assign the issue
-        - [ ] Propose a solution in the issue description / comments.
-        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
-        - [ ] Create a branch from the GitHub development panel and start working on it.
-
-        #### 𝟐 - On Code
-
-        - [ ] Write design / implementation choices down in comments.
-        - [ ] Unit and/or integration tests? Or justify why not in comments.
-        - [ ] Documentation. Make sure anyone else working over your code can understand it.
-        - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
-
-        #### 𝟑 - On Github
-
-        - [ ] Create a Pull Request from your branch.
-        - [ ] Set the _status_ of the issue to `REVIEW`.
-        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
-        - [ ] Set the _status_ of the issue to `DONE`.
     validations:
       required: true

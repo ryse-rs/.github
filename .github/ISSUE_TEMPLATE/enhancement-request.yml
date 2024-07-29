@@ -38,11 +38,11 @@ body:
       value: |
         > [!IMPORTANT]  
         > SUBMIT. Do now touch the following content. You are expected to update it once the issue submitted.
-        
+
   - type: textarea
     id: markdown
     attributes:
-      label: POST SUBMIT
+      label: Issue State Tracker
       value: |
         ## Priority - Score
 

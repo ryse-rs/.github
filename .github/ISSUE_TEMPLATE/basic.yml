@@ -28,7 +28,7 @@ body:
   - type: textarea
     id: markdown
     attributes:
-      label: POST SUBMIT
+      label: Issue State Tracker
       value: |
         ## Priority - Score
 
