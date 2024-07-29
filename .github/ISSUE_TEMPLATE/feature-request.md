@@ -1,14 +1,14 @@
 ---
-name: Enhancement request
-about: Some improvement suggestions are always welcome! Please fill with care.
-title: "[ENHANCE]"
-labels: upgrade
+name: Feature request
+about: More shiny stuff! Please fill with care.
+title: "[FEAT]"
+labels: feature
 assignees: ""
 ---
 
-<!-- Thank you for your dedication 🙏🏻 -->
+<!-- Thank you for your passion 🙏🏻 -->
 
-## **What** change are you proposing?
+## **What** addition are you proposing?
 
 <!--
 FILL ME

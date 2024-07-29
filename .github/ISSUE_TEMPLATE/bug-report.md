@@ -1,28 +1,34 @@
 ---
-name: Enhancement request
-about: Some improvement suggestions are always welcome! Please fill with care.
-title: "[ENHANCE]"
-labels: upgrade
+name: Bug report
+about: Hunt down one more bug! Please fill with care.
+title: "[BUG]"
+labels: bug
 assignees: ""
 ---
 
-<!-- Thank you for your dedication 🙏🏻 -->
+<!-- Thank you for your hawk eye 🙏🏻 -->
 
-## **What** change are you proposing?
-
-<!--
-FILL ME
-Current situation vs new situation. Context, to help understand your proposal.
--->
-
-## **Why** should we do that?
+## **What** is the issue?
 
 <!--
 FILL ME
-What would be the benefits?
+Expected behaviour vs Current behaviour.
 -->
 
-## **How** can we achieve this?
+## Steps to reproduce
+
+<!--
+FILL ME
+-->
+
+## Relevant information about your environment
+
+<!--
+FILL ME
+(e.g. browser, OS, versions of rust, tools, logs, etc.)
+-->
+
+## **How** can we fix it?
 
 <!--
 FILL ME
@@ -37,12 +43,12 @@ SUBMIT ME then update at least priorities
 
 ### Impact
 
-_How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
+_How many users are affected and how severe is the impact? (`average(reach, impact)`)_
 
-- [ ] I1 - Negligible impact | Benefits really few users
-- [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
-- [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-- [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+- [ ] I1 - Negligible impact | Affects really few users
+- [ ] I2 - Affects a specific part of the application, but not critical | Affects a small number of users
+- [ ] I3 - Affects a core part of the application | Affects a large number of users
+- [ ] I4 - Nothing works | Every user is affected
 
 ### Complexity
 
