@@ -32,7 +32,7 @@ body:
     id: markdown
     attributes:
       label: STOP HERE, SUBMIT THEN UPDATE
-      placeholder: |
+      value: |
         ## Priority - Score
 
         ### Impact
@@ -103,3 +103,5 @@ body:
         - [ ] Set the _status_ of the issue to `DONE`.
 
         *status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+    validations:
+      required: true
