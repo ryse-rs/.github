@@ -19,10 +19,16 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]  
+        > SUBMIT. Do now touch the following content. You are expected to update it once the issue submitted.
+
   - type: textarea
     id: markdown
     attributes:
-      label: STOP HERE, SUBMIT THEN UPDATE
+      label: POST SUBMIT
       value: |
         ## Priority - Score
 
