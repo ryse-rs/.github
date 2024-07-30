@@ -16,21 +16,21 @@ body:
   - type: input
     id: what
     attributes:
-      label: _What_ addition are you proposing?
+      label: What addition are you proposing?
       description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: _Why_ should we do that?
+      label: Why should we do that?
       description: Who needs it? What pain does it solve?
     validations:
       required: true
   - type: textarea
     id: need
     attributes:
-      label: _How_ can we achieve this?
+      label: How can we achieve this?
       description: Feel free to provide implementation details. This will speed up the process.
       value: |
         - [ ] ...
@@ -41,7 +41,8 @@ body:
     attributes:
       value: |
         > [!CAUTION]  
-        > SUBMIT. Do now touch the following content. You are expected to update it once the issue submitted.
+        > SUBMIT.
+        > Do now touch the following content. You are expected to update it once the issue submitted.
 
   - type: textarea
     id: markdown

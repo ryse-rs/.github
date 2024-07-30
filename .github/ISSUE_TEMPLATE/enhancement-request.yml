@@ -16,28 +16,29 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: __What__ would change with enhancement?
+      label: What would change with enhancement?
       description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: __Why__ should we do that?
+      label: Why should we do that?
       description:  What would be the benefits?
     validations:
       required: true
   - type: textarea
     id: implementation
     attributes:
-      label: __How__ can we achieve this?
+      label: How can we achieve this?
       description: Feel free to provide implementation details. This will speed up the process.
 
   - type: markdown
     attributes:
       value: |
         > [!CAUTION]  
-        > SUBMIT. Do now touch the following content. You are expected to update it once the issue submitted.
+        > SUBMIT.
+        > Do now touch the following content. You are expected to update it once the issue submitted.
 
   - type: textarea
     id: markdown
