@@ -46,7 +46,7 @@ body:
         > SUBMIT.
         > Do now touch the following content. You are expected to update it once the issue submitted.
 
-  - type: textarea
+  - type: input
     id: markdown
     attributes:
       label: Issue State Tracker
