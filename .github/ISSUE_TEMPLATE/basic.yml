@@ -22,6 +22,12 @@ body:
   - type: markdown
     attributes:
       value: |
+        > [!IMPORTANT]
+        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+        > Please fill this form with care. Ready to process requests are prioritized.
+        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
+        > After submit, please update SCORE values (Github issue projects right panel (expanded)). And keep it up to date.
+
         > [!CAUTION]  
         > SUBMIT.
         > Do now touch the following content. You are expected to update it once the issue submitted.
@@ -31,69 +37,61 @@ body:
     attributes:
       label: Issue State Tracker
       value: |
-        ## Priority - Score
+        Make sure you're aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+        If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
+
+        > [!WARNING]
+        > Do not start working on the issue if _status_ has not been set to `BACKLOG`.
+        > Make sure the issue proposes a solution you can implement.
+        > Branch should be created from github development panel (right).
+        > Tick checks once you have completed the task.
+        > Do not tick 1 before you're ready to work on the issue.
+
+        - [ ] [SCORES] Set `impact`, `complexity` and `effort` in right panel. Keep it updated.
+        - [ ] [READY] 1. Self-assign the issue; 2. Create a branch; 3. Set _status_ to `ACTIVE`
+        - [ ] [TEST] Did your document your code? Make sure anyone else working over your code can understand it.
+        - [ ] [DOC] Unit and/or integration tests? Or justify why not in comments.
+        - [ ] [CLEANUP] No logs, debug code, or temporary comments.
+        - [ ] [CI] Does it pass CI?
+        - [ ] [STANDUP] How did the implementation fare? Left a comment.
+        - [ ] [REVIEW] 1. Create a Pull Request; 2. set _status_ to `REVIEW`; 3. request a review from a maintainer.
+        - [ ] [MERGE] 1. Update Scores if needed; 2. Rebase main in your branch (if needed); 3. set _status_ to `DONE`.
+
+        *status*es: [ `NEW FUTURE BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
+
+        <details>
+        <summary>SCORING SYSTEM HELPER</summary>
 
         ### Impact
 
         _How many users would benefit from this enhancement and how big would the impact be? (`average(reach, impact)`)_
 
-        - [x] I1 - Negligible impact | Benefits really few users
-        - [ ] I2 - Interesting enhancement | Benefits a fair proportion of users
-        - [ ] I3 - Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
-        - [ ] I4 - This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
+        1. Negligible impact | Benefits really few users
+        2. Interesting enhancement | Benefits a fair proportion of users
+        3. Non-blocking but essential enhancement | Every user will benefit from having this enhancement.
+        4. This enhancement is a prerequisite for other essential enhancements | Would have no user without this enhancement.
 
         ### Complexity
 
         _How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account_.
 
-        - [x] C1 - Easy. Use of brain cells is mostly null.
-        - [ ] C2 - Manageable. Will require hours of research / experimentation.
-        - [ ] C3 - Hard. Will require days of research / experimentation, **prior to implementation**.
-        - [ ] C4 - Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
+        1. Easy. Use of brain cells is mostly null.
+        2. Manageable. Will require hours of research / experimentation.
+        3. Hard. Will require days of research / experimentation, **prior to implementation**.
+        4. Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
 
         ### Effort
 
         _Select the estimated number of lines of code (`max(additions, deletions)`). Do not take complexity into account._
 
-        - [x] E1 - < 200 LoC
-        - [ ] E2 - < 750 LoC
-        - [ ] E3 - < 1k5 LoC
-        - [ ] E4 - >= 1k5 LoC
+        1. < 200 LoC
+        2. < 750 LoC
+        3. < 1k5 LoC
+        4. \> 1k5 LoC
 
-        > [!NOTE] > **Priority Formula** ➧ `impact * effort * complexity` > **Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
-        > Effort being computed this way: `max(additions, deletions)`
+        > **Priority Formula** ➧ `impact * effort * complexity`
+        > **Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
 
-        ---
-
-        POST ISSUE SUBMISSION
-
-        > [!IMPORTANT]
-        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        > Please fill this form with care. Ready to process requests are prioritized.
-        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
-
-        #### 1 - On Github
-
-        - [ ] Self-assign the issue
-        - [ ] Propose a solution in the issue description / comments.
-        - [ ] Set the appropriate _status_: `BACKLOG` (if ready) or `ACTIVE` (if actually working on the implementation)
-        - [ ] Create a branch from the GitHub development panel and start working on it.
-
-        #### 𝟐 - On Code
-
-        - [ ] Write design / implementation choices down in comments.
-        - [ ] Unit and/or integration tests? Or justify why not in comments.
-        - [ ] Documentation. Make sure anyone else working over your code can understand it.
-        - [ ] Make sure to create a new issue for any future **expected** improvement and reference this one in the new issue description.
-
-        #### 𝟑 - On Github
-
-        - [ ] Create a Pull Request from your branch.
-        - [ ] Set the _status_ of the issue to `REVIEW`.
-        - [ ] Request the review from a maintainer. Once reviewed, rebase main in your branch (if needed).
-        - [ ] Set the _status_ of the issue to `DONE`.
-
-        *status*es: [ `NEW BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
-
+        </details>
     validations:
       required: true
