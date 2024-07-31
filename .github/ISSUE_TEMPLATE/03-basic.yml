@@ -47,15 +47,15 @@ body:
         > Tick checks once you have completed the task.
         > Do not tick 1 before you're ready to work on the issue.
 
-        - [ ] [SCORES] Set `impact`, `complexity` and `effort` in right panel. Keep it updated.
-        - [ ] [READY] 1. Self-assign the issue; 2. Create a branch; 3. Set _status_ to `ACTIVE`
-        - [ ] [TEST] Did your document your code? Make sure anyone else working over your code can understand it.
-        - [ ] [DOC] Unit and/or integration tests? Or justify why not in comments.
+        - [ ] [SCORES]  Set `impact`, `complexity` and `effort` in right panel. Keep it updated.
+        - [ ] [READY]   1. Self-assign the issue; 2. Create a branch; 3. Set _status_ to `ACTIVE`
+        - [ ] [TEST]    Did your document your code? Make sure anyone else working over your code can understand it.
+        - [ ] [DOC]     Unit and/or integration tests? Or justify why not in comments.
         - [ ] [CLEANUP] No logs, debug code, or temporary comments.
-        - [ ] [CI] Does it pass CI?
+        - [ ] [CI]      Does it pass CI?
         - [ ] [STANDUP] How did the implementation fare? Left a comment.
-        - [ ] [REVIEW] 1. Create a Pull Request; 2. set _status_ to `REVIEW`; 3. request a review from a maintainer.
-        - [ ] [MERGE] 1. Update Scores if needed; 2. Rebase main in your branch (if needed); 3. set _status_ to `DONE`.
+        - [ ] [REVIEW]  1. Create a Pull Request; 2. set _status_ to `REVIEW`; 3. request a review from a maintainer.
+        - [ ] [MERGE]   1. Update Scores if needed; 2. Rebase main in your branch (if needed); 3. set _status_ to `DONE`.
 
         *status*es: [ `NEW FUTURE BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
 
