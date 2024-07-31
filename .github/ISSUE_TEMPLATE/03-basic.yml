@@ -1,5 +1,5 @@
 name: Basic issue for simple immediate changes. Self-assigned
-description: doc + test + minor + immediate changes only! Self-assigned.
+description: doc + test + minor + immediate changes only!
 projects: ["ryse-rs/2"]
 body: 
   - type: markdown
