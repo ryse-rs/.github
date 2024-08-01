@@ -6,12 +6,9 @@ body:
     attributes:
       value: |
         Thank you for your quickness 🗲
-
-        > **IMPORTANT**
-        >
-        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        >
-        > Please fill this form with care. Ready to process issues are prioritized.
+        
+        Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+        Please fill this form with care. Ready to process issues are prioritized.
 
   - type: textarea
     id: what
