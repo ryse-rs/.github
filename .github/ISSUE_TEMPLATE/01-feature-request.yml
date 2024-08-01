@@ -4,6 +4,15 @@ title: "[feat] "
 labels: ["feature"]
 projects: ["ryse-rs/2"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your passion 💜
+
+        Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
+        Please fill this form with care. Ready to process requests are prioritized.  
+        If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
+
   - type: input
     id: what
     attributes:
@@ -29,18 +38,10 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        Thank you for your passion 💜
-
-        > [!IMPORTANT]
-        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        > Please fill this form with care. Ready to process requests are prioritized.
-        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
+      value: |        
         > After submit, please update SCORE values (Github issue projects right panel (expanded)). And keep it up to date.
 
-        > [!CAUTION]  
-        > SUBMIT.
-        > Do now touch the following content. You are expected to update it once the issue submitted.
+        Please sir, SUBMIT.
 
   - type: textarea
     id: markdown
