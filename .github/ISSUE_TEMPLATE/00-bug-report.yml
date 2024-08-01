@@ -3,16 +3,7 @@ description: Hunt down one more bug! Please fill with care. 🐞
 title: "[bug] "
 labels: ["bug"]
 projects: ["ryse-rs/2"]
-body: 
-  - type: markdown
-    attributes:
-      value: |
-        > [!IMPORTANT]
-        > Thank you for your hawk eyes 🦅
-        > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        > Please fill this form with care. Ready to process reports are prioritized.
-        > If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
-
+body:        
   - type: textarea
     id: what
     attributes:
@@ -48,6 +39,8 @@ body:
     attributes:
       label: Issue State Tracker
       value: |
+        Thank you for your hawk eyes 🦅
+
         > [!IMPORTANT]
         > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
         > Please fill this form with care. Ready to process requests are prioritized.
