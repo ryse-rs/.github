@@ -6,12 +6,11 @@ body:
     attributes:
       value: |
         Thank you for your quickness 🗲
-        <blockquote style="background-color: #f9f9f9; border-left: 10px solid #ffcc00; padding: 10px;">
-          <strong>IMPORTANT:</strong> Please make sure you made yourself aware of our <a href="https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md">CONTRIBUTING rules</a> and our <a href="https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md">GOVERNANCE processes and vision</a>.
-          Please fill this form with care. Ready to process issues are prioritized.
-        </blockquote>
-        > [!IMPORTANT]
+
+        > **IMPORTANT**
+        >
         > Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+        >
         > Please fill this form with care. Ready to process issues are prioritized.
 
   - type: textarea
