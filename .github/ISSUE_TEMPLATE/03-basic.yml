@@ -21,10 +21,10 @@ body:
 
   - type: markdown
     attributes:
-      value: |        
-        > After submit, please update SCORE values (Github issue projects right panel (expanded)). And keep it up to date.
+      value: |
+        Please sir, ignore the following field (issue tasks and score details) and SUBMIT now 🚀
 
-        Please sir, SUBMIT.
+        After submit, please update SCORE values (Github issue projects right panel (expanded)). And keep it up to date.
 
   - type: textarea
     id: markdown
