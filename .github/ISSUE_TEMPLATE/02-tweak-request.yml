@@ -1,13 +1,13 @@
-name: Bug Report
-description: Hunt down one more bug! Please fill with care. 🐞
-title: "[bugfix] "
-labels: ["bugfix"]
+name: Tweak Request
+description: Thank you for contributing to this project! Your efforts are greatly appreciated. 🙏🏻
+title: "[tweak] "
+labels: ["tweak"]
 projects: ["ryse-rs/2"]
-body: 
+body:
   - type: markdown
     attributes:
       value: |
-        Thank you for your hawk eyes 🦅
+        Thank you for your dedication 🦖
 
         Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
         Please fill this form with care. Ready to process requests are prioritized.  
@@ -16,26 +16,23 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: What is the issue?
-      description: Expected behaviour vs Current behaviour.
+      label: What would this change?
+      description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
   - type: textarea
-    id: steps-to-reproduce
+    id: why
     attributes:
-      label: Steps to reproduce
+      label: Why should we do that?
+      description:  What would be the benefits?
     validations:
       required: true
-  - type: input
-    id: context
-    attributes:
-      label: Environment
-      description: Relevant information about your environment (e.g. browser, OS, versions of rust, tool, etc.).
   - type: textarea
-    id: how
+    id: implementation
     attributes:
-      label: How can we fix it?
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: How can we achieve this?
+      description: Feel free to provide implementation details. This will speed up the process.
+
 
   - type: markdown
     attributes:
@@ -76,12 +73,12 @@ body:
 
         ### Impact
 
-        _How many users are affected and how severe is the impact? (`average(reach, impact)`)_
+        _How many users would benefit from these changes and how big would the impact be? (`average(reach, impact)`)_
 
-        1. Negligible impact | Affects really few users
-        2. Affects a specific part of the application, but not critical | Affects a small number of users
-        3. Affects a core part of the application | Affects a large number of users
-        4. Nothing works | Every user is affected
+        1. Negligible impact | Benefits really few users
+        2. Interesting enhancement | Benefits a fair proportion of users
+        3. Non-blocking but essential enhancement | Every user will benefit from having this change.
+        4. This change is a prerequisite for other essential enhancements | Would have no user without this change.
 
         ### Complexity
 
