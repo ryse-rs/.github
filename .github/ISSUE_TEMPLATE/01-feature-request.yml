@@ -1,7 +1,7 @@
 name: Feature Request
 description: Thank you for contributing! Your passion is greatly appreciated. 🙏🏻
 title: "[feature] "
-labels: ["feature"]
+labels: ["FEATURE"]
 projects: ["ryse-rs/2"]
 body:
   - type: markdown

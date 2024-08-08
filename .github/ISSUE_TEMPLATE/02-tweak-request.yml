@@ -1,7 +1,7 @@
 name: Tweak Request
 description: Thank you for contributing to this project! Your efforts are greatly appreciated. 🙏🏻
 title: "[tweak] "
-labels: ["tweak"]
+labels: ["TWEAK"]
 projects: ["ryse-rs/2"]
 body:
   - type: markdown

@@ -1,7 +1,7 @@
 name: Production Bug Report
 description: URGENT - Release has a bug! Please fill with care. 🐞
 title: "[hotfix] "
-labels: ["hotfix"]
+labels: ["HOTFIX"]
 projects: ["ryse-rs/2"]
 body: 
   - type: markdown

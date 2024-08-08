@@ -1,7 +1,7 @@
 name: Bug Report
 description: Hunt down one more bug! Please fill with care. 🐞
 title: "[bugfix] "
-labels: ["bugfix"]
+labels: ["BUGFIX"]
 projects: ["ryse-rs/2"]
 body: 
   - type: markdown
