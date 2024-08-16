@@ -58,8 +58,8 @@ body:
 
         - [ ] [SCORES]  Set `impact`, `complexity` and `effort` in right panel. Keep it updated.
         - [ ] [READY]   1. Self-assign the issue; 2. Create a branch; 3. Set _status_ to `ACTIVE`
-        - [ ] [TEST]    Did your document your code? Make sure anyone else working over your code can understand it.
-        - [ ] [DOC]     Unit and/or integration tests? Or justify why not in comments.
+        - [ ] [DOC]     Did your document your code? Make sure anyone else working over your code can understand it.
+        - [ ] [TEST]    Unit and/or integration tests? Or justify why not in comments.
         - [ ] [CLEANUP] No logs, debug code, or temporary comments.
         - [ ] [CI]      Does it pass CI?
         - [ ] [STANDUP] How did the implementation fare? Left a comment.
