@@ -1,21 +1,46 @@
-Welcome visitor.
+# ryse-rs/.github
 
-There is not much here to see.
+Centralized GitHub configuration and contribution guidelines for the **ryse-rs** organization.
 
-This place may provide ideas, tools, products and services.
+This repository provides:
+- 🌐 Default project health files (issue templates, contributing guide, governance)
+- 🧭 Unified project vision and contribution policies
+- ⚙️ GitHub-wide defaults applied to all repos via GitHub's special `.github` repo mechanism
 
-It could even provide learning content to be shared.
+---
 
-# WHAT IS OUR VISION ABOUT SOFTWARE DEVELOPMENT?
+## 🚀 Vision: Our Approach to Software Development
 
-See [GOVERNANCE](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
+Learn about our vision, values and governance in [GOVERNANCE.md](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md)
 
-There, you will learn more about project / issues / PR / GitHub / Code management.
+## 🤝 How to Contribute
 
-We also have a scoring system (yet to automate).
+Start here (must read, it is our shared reference): 📖 [CONTRIBUTING.md](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md)
 
-# HOW CAN I CONTRIBUTE?
+## 🧪 Project Management & Workflows
 
-See [CONTRIBUTING](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md).
+We rely on:
+- A consistent **branching strategy** (`main`, `dev`, feature/topic branches)
+- **Project boards** to manage priorities
+- **Issue scoring** to evaluate impact, urgency, and effort
+- Automated **CI/CD pipelines** for validation
+- GitHub **Keywords** to link PRs to issues (`Fixes #...`, `Closes #...`)
+- Follow the [Conventional Commits](https://www.conventionalcommits.org) format.
 
-This document is really important as it clearly defines every step you must cover in order to get any code modification into the main branch.
+> 🛠 Details on workflows and scoring are defined in [GOVERNANCE.md](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md)
+
+## 📋 Issue Templates
+
+All repositories support unified templates for:
+
+- 🐛 [Bug Reports](.github/ISSUE_TEMPLATE/bug_report.yml)
+- 🚀 [Feature Requests](.github/ISSUE_TEMPLATE/feature_request.yml)
+- ✨ [Enhancement Proposals](.github/ISSUE_TEMPLATE/enhancement.yml)
+
+These templates help us triage faster and build better software together.
+
+## 🙌 Thanks
+
+Every contribution matters. Whether it's fixing a typo, proposing a major refactor, or joining a discussion — you're helping improve our solutions.
+
+Let’s build great things together.

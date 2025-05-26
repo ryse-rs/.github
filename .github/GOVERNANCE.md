@@ -1,132 +1,72 @@
-# Project management
+# Vision
 
-We mostly apply a simplified / mixed version of Agile and Kanban methodology.
+We believe that great software is built on:
 
-It all boils down to a list of states (_GitHub_ `status` label).
+- **Clarity**: clean interfaces, documented decisions, and clear responsibilities.
+- **Transparency**: clear and structured processes and constructive feedback loops.
+- **Modularity**: separation of concerns and composable architecture.
+- **Validation**: testing, type safety, and continuous integration.
+- **Responsibility**: each contributor owns their work from draft to merge.
 
-Every suggestion, request or report is refined before ending up in a `BACKLOG`, ready to be implemented, reviewed, then merged into the main service.
+# ✔️ Methodology
 
-For now, there are no sprints as there is no release.
-Items are prioritized based on our own scoring system.
-Early milestones have been set towards usability. These milestones definitions are common to all repositories.
+We use a hybrid Agile-Kanban workflow. Work items progress through a lifecycle defined by GitHub status labels.
 
-## Vision
+Every suggestion, request, or bug report is tracked as a GitHub issue. Issues are refined before being added to the `BACKLOG` GitHub project.
 
-As of now (early 2024), every development revolves around modularity.
-Even though there are multiple end-user projects, most of our repositories could be considered as advanced templates with great code reusability.
+Prioritization and workload allocation rely on our in-house scoring system (see “Scoring System” below).
 
-## Project management location
+During the incubation phase of a project, we focus on backlog grooming and ensuring implementation readiness—no active sprints are held. Once a project enters the release phase (including alpha and beta), we switch to time-boxed sprints with defined deliverables.
 
-From a visionary perspective, project is managed using Notion. This includes business plan, products vision. Most of the content that is not development related.
-From a developer perspective, project is exclusively managed through GitHub Projects, Issues, and Discussions.
-Every piece of information, milestone, status, questions, TODO, must happen on GitHub.
+Although we support multiple end-user applications, many of our repositories serve as reusable foundations or advanced templates.
 
-## Github usage rules
+# 🗂️ Project Management
 
-- Use related _project_ for every task
-- Every task is either a discussion or an issue. Always make use of issues features: Comments, Assignees, Labels, Milestones...
-- Always create a branch for tasks
-- No code goes into _main_ without at least one code review
-- Make actionable comments whenever possible: comments the author can act on.
-- Use issue labels
+**Vision & Business:** Managed in Notion (roadmaps, business plans).  
+**Development:** Managed in GitHub (projects, issues, discussions).
 
-## Issues
+# 🔢 Scoring System
 
-Please follow the issue lifecycle whenever you want to contribute.
-We provide various templates in english and french for users to help improving our services.
-These templates follow strict material, including a project status field that must be kept up to date both from issue author and maintainers.
-This schema explains everything.
+We adapt RICE to evaluate contributions by Impact, Effort, and Complexity.
 
-![Issue lifecyle - status](issue-lifecyle-status.svg)
+```
+priority = impact × effort × complexity
+```
 
-## Pull Requests
+> Contribution is computed a bit differently:
+> ```
+> contribution (upon merge) = impact × 0.5 × complexity × effort
+> ```
 
-As we use GitHub free edition for now, _Pull requests_ are only created for review, upon issue implementation completion.
+Where:  
+- Effort = max(additions, deletions)  
+- Impact = average(reach, impact)  
+- Complexity = difficulty level (algorithmic challenge, uncertainty, cognitive load)
 
-A really important subject to treat well as a bad PR handling:
+### Impact  
+Estimate how many users will benefit and the overall effect. 
 
-- reflects code smells and irresponsibility
-- costs a lot of time
-- generates frustration and uncertainty over the product stability
-- causes issues: bugs, regressions
+> 1. Negligible impact | Affects really few users
+> 2. Affects a specific part of the application, but not critical | Affects a small number of users
+> 3. Affects a core part of the application | Affects a large number of users
+> 4. Nothing works | Every user is affected
 
-### Git related rules
+### Complexity  
+Assess the difficulty of solving the problem, taking into account algorithmic challenges, uncertainty, and cognitive load.
 
-- PRs should be small. Why? Easier to review, less conflicts, quicker problem detection.
-- Merge ASAP
-- Frequently sync up your feature branch with _main_.
-- Do pair merging when having any doubt.
-- [[Single Responsibility Principle]]: one feature, one branch, even try to split one feature in atomic elements.
-- Cleaning, refactoring and widespread renaming changes should always be their own PR (one PR per change), and not during a sprint.
-- Branch from _main_ unless necessary. Do not branch too deeply. Merge children to direct parent, not to sibling.
-- CI should check for:
-  - format
-  - lints, code quality. IE _clippy_ for _rust_.
-  - code coverage tools (tests)
-  - possible vulnerabilities
+Do not consider lines of code.
 
-> [!Note]
-> Branching strategy - common scenarios: main + release + maintenance + per isolated feature + per isolated team.
->
-> 1. _release_ is created from main on [[feature freeze]].
-> 2. During _feature freeze_, only create branches from _release_
-> 3. On release, apply fixes to _release_, which is merged into _main_ periodically
+> 1. Easy. Use of brain cells is mostly null.
+> 2. Manageable. Will require hours of research / experimentation.
+> 3. Hard. Will require days of research / experimentation, **prior to implementation**.
+> 4. Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
 
-### Code related rules
+### Effort  
+Estimate the coding effort as the maximum of additions and deletions.
 
-- High unit test coverage to protect against regressions.
-- Open Closed Principle: open for extension, closed for modification. It means:
-  - A merged feature should be stable, so not subject to change (only extension).
-  - By exception if a modification must be made, do it on its own PR (_OCP Exception_).
-    Exception case: bug fix, refactoring and improvement.
-  - Must be coupled with SRP: the shorter the method, the less prone it will be to update.
-- Single Responsibility Principle (SRP): one class, one responsibility.
-- Short methods, one task per method. Split code into atomic elements.
-- Everyone must use the same standard linter + formatter + code quality, which must be applied on save and checked on CI so as a reviewer you do not have to watch this.
-- [[Microservices]] or modular architecture to avoid multiple devs working on the same codebase
+Do not factor in complexity.  
 
-### Process related
-
-- Break everything down into tasks, each being less than two days.
-- Anticipate overlapping areas during meetings to raise awareness and eventually delay a feature.
-
-### Developer rules
-
-What should be done as the author:
-
-- Comment the PR, it should always mention:
-  - Difficulties you went through, what made some changes difficult
-  - Special concern / high risk areas of change
-  - New code that is not yet in its definitive form
-    Always leave at least one comment to explain what the feature does, indicate which issues it closes if multiple.
-
-### Review *PR*s from Visual Studio Code
-
-1. Install the official _Github pull Requests and Issues_ extension
-2. Accept the github account integration
-   From here, you will be able to interact with the usual graphical PR from the _Description_ view:
-
-- Adding comments
-- Checkout the branch
-- Check _Github Actions_
-  When checking out the pull request, it will open a new view, very similar to Github's review space.
-  Enjoy.
-
-## Scoring System
-
-Our scoring system is derived from RICE and leverages Impact, Effort, Complexity to prioritize and evaluate contribution.
-**Priority Formula** ➧ `impact * effort * complexity`
-**Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
-Effort being computed this way: `max(additions, deletions)`
-
-### Impact
-
-How many users would benefit from this feature and how big would the impact be? `average(reach, impact)`
-
-### Complexity
-
-How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, and uncertainty. Do not take lines of code into account
-
-### Effort
-
-Select the estimated number of lines of code `max(additions, deletions)`. Do not take complexity into account.
+> 1. < 200 LoC
+> 2. < 750 LoC
+> 3. < 1k5 LoC
+> 4. \> 1k5 LoC

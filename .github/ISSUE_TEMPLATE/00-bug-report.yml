@@ -1,16 +1,16 @@
 name: Bug Report
-description: Hunt down one more bug! Please fill with care. 🐞
+type: Bug
 title: "[bugfix] "
-labels: ["BUGFIX"]
+description: Hunt down one more bug! Please fill with care. 🐞
 projects: ["ryse-rs/2"]
-body: 
+body:
   - type: markdown
     attributes:
       value: |
-        Thank you for your hawk eyes 🦅
+        You've got hawk eyes 🦅
 
-        Please make sure you made yourself aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
-        Please fill this form with care. Ready to process requests are prioritized.  
+        Please acknowledge our [CONTRIBUTING guidelines](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
+        Please fill this form with care. Accurate and detailed reports speed up resolution and improve outcomes.  
         If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
 
   - type: textarea
@@ -40,70 +40,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please sir, ignore the following field (issue tasks and score details) and SUBMIT now 🚀
+        Again, thank you. Every contribution counts! 🙏🏻
 
-        After submit, please update SCORE values (Github issue projects right panel (expanded)). And keep it up to date.
-
-  - type: textarea
-    id: markdown
-    attributes:
-      label: Issue State Tracker
-      value: |
-        Make sure you're aware of our [CONTRIBUTING rules](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE processes and vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).
-        If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
-
-        > [!WARNING]
-        > Do not start working on the issue if _status_ has not been set to `BACKLOG`.
-        > Make sure the issue proposes a solution you can implement.
-        > Branch should be created from github development panel (right).
-        > Tick checks once you have completed the task.
-        > Do not tick 1 before you're ready to work on the issue.
-
-        - [ ] [SCORES]  Set `impact`, `complexity` and `effort` in right panel. Keep it updated.
-        - [ ] [READY]   1. Self-assign the issue; 2. Create a branch; 3. Set _status_ to `ACTIVE`
-        - [ ] [DOC]     Did your document your code? Make sure anyone else working over your code can understand it.
-        - [ ] [TEST]    Unit and/or integration tests? Or justify why not in comments.
-        - [ ] [CLEANUP] No logs, debug code, or temporary comments.
-        - [ ] [CI]      Does it pass CI?
-        - [ ] [STANDUP] How did the implementation fare? Left a comment.
-        - [ ] [REVIEW]  1. Create a Pull Request; 2. set _status_ to `REVIEW`; 3. request a review from a maintainer.
-        - [ ] [MERGE]   1. Update Scores if needed; 2. Rebase main in your branch (if needed); 3. set _status_ to `DONE`.
-
-        *status*es: [ `NEW FUTURE BACKLOG ACTIVE TEST REVIEW CHANGES REBASE DONE CANCELLED` ]
-
-        <details>
-        <summary>SCORING SYSTEM HELPER</summary>
-
-        ### Impact
-
-        _How many users are affected and how severe is the impact? (`average(reach, impact)`)_
-
-        1. Negligible impact | Affects really few users
-        2. Affects a specific part of the application, but not critical | Affects a small number of users
-        3. Affects a core part of the application | Affects a large number of users
-        4. Nothing works | Every user is affected
-
-        ### Complexity
-
-        _How complex do you think the problem resolution will be? Consider factors such as algorithmic, brainfuck, novelty, experimentation and uncertainty. Do not take lines of code into account_.
-
-        1. Easy. Use of brain cells is mostly null.
-        2. Manageable. Will require hours of research / experimentation.
-        3. Hard. Will require days of research / experimentation, **prior to implementation**.
-        4. Black Magic level. May require weeks of research / experimentation, **prior to implementation**. May even be unsolvable.
-
-        ### Effort
-
-        _Select the estimated number of lines of code (`max(additions, deletions)`). Do not take complexity into account._
-
-        1. < 200 LoC
-        2. < 750 LoC
-        3. < 1k5 LoC
-        4. \> 1k5 LoC
-
-        > **Priority Formula** ➧ `impact * effort * complexity`
-        > **Contribution Formula** ➧ `impact * 0.5 * complexity * (actually merged) effort`
-
-        </details>
-    validations:
-      required: true
+        Once the issue submitted, please expand GitHub issue projects right panel and set SCORE values: impact, effort, complexity.
