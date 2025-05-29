@@ -1,6 +1,6 @@
 name: Bug Report
 type: Bug
-title: "[bugfix] "
+title: "[bug] "
 description: Hunt down one more bug! Please fill with care. 🐞
 projects: ["ryse-rs/2"]
 body:
@@ -9,37 +9,59 @@ body:
       value: |
         You've got hawk eyes 🦅
 
+        Make sure title is imperative - actionable - starts with a verb.
         Please acknowledge our [CONTRIBUTING guidelines](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
-        Please fill this form with care. Accurate and detailed reports speed up resolution and improve outcomes.  
+        Please fill with care. Accurate and detailed reports speed up resolution and improve outcomes.  
         If you have any questions or need guidance, feel free to add related labels and ping a maintainer.
 
   - type: textarea
     id: what
     attributes:
-      label: What is the issue?
-      description: Expected behaviour vs Current behaviour.
+      label: 📝 Description
+      description: |
+        What is the bug? Describe what you expected to happen, and what actually happened.  
+        Include error messages, logs, screenshots or clips if relevant.
+      placeholder: |
+        I expected [X] to happen when I did [Y], but instead [Z] occurred.
     validations:
       required: true
+
   - type: textarea
-    id: steps-to-reproduce
+    id: reproduction-steps
     attributes:
-      label: Steps to reproduce
+      label: 🔁 Steps to Reproduce
+      description: Provide a step-by-step list to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Request inspector displays the following error code: XXX and message '...'
     validations:
       required: true
+
   - type: input
-    id: context
+    id: env
     attributes:
-      label: Environment
-      description: Relevant information about your environment (e.g. browser, OS, versions of rust, tool, etc.).
+      label: 🧪 Environment
+      description: |
+        Provide related details like OS, browser, tool versions, Rust version, etc.
+      placeholder: |
+        e.g. Linux 24.04, Chrome 124, Rust 1.85.0, Dioxus 0.7
+
   - type: textarea
-    id: how
+    id: insights
     attributes:
-      label: How can we fix it?
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: 🧠 Insights
+      description: |
+        Anything else you’d like to share? Related issues, links, additional information that might help us.  
+        Fix proposal or guidance, or tip to avoid this kind of issues.
 
   - type: markdown
     attributes:
       value: |
         Again, thank you. Every contribution counts! 🙏🏻
 
-        Once the issue submitted, please expand GitHub issue projects right panel and set SCORE values: impact, effort, complexity.
+        Once the issue submitted, please expand GitHub issue projects right panel and set SCORE values: impact, effort, complexity. →
+
+        Next steps:  
+        1. Issue will be reviewed and hypothetically backlogged.
+        2. Assignee will create a branch, a pull request, set _status_ to `ACTIVE`, and start working on implementing the task.

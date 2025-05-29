@@ -11,9 +11,17 @@ Before opening this Pull Request, make sure you've:
 
 > _Explain how implementation went. Difficulties you faced. Successes you're proud of. Things you've learned._
 
+0. How implementation went
+
+1. Difficulties I faced
+
+2. Successes
+
+3. What I've learned
+
 ---
 
-## 📸 Screenshots
+## 📸 CAPTURES
 
 > _All UI / UX changes should be posted as a screenshot or clip illustrating the changes_
 
@@ -21,25 +29,28 @@ Before opening this Pull Request, make sure you've:
 
 > Tick items once completed.
 
-> Unticked items should be explained in the comments.
+> Comment to explain if an item is purposefully left non-ticked.
 
+## Definition of Done
 
-## Task list
+To be ticked by developer and verified by reviewer
 
 ## 🚀 Readiness Checks
 
-- [ ] **[ESTIMATE]** Impact, complexity, and effort scores are set in the issue’s right sidebar.
-- [ ] **[ACTIVATE]** Issue is assigned to you, _status_ is set to `ACTIVE`.
+- [ ] **[NAMING:↑]** PR title follows `<type>(opt.scope): <imperative title>` convention. Type: `fix:`, `feat:`, `task:` most of the time.
+- [ ] **[ESTIMATE:→]** Impact, complexity, and effort scores are set in the issue’s right sidebar.
+- [ ] **[ACTIVATE:→]** Issue is assigned to you, _status_ is set to `ACTIVE`.
 
 ### 🔍 Final Review Checks
 
-- [ ] **[DOCUMENT]** Code is documented clearly for others to understand and maintain.
-- [ ] **[DOCUMENT]** Feature is documented from a user perspective.
+- [ ] **[DOCUMENT]** Code is documented for developers / users to understand and maintain / use.
 - [ ] **[TEST]** Unit and/or integration tests are included, or justification is provided.
-- [ ] **[CLEAN]** Debug logs, temporary comments, and dead code are removed.
-- [ ] **[CHECK]** All automated checks (formatting, linting, CI) are passing.
-- [ ] **[RECORD]** UI/UX changes are recorded with a screenshot or clip.
-- [ ] **[STANDUP]** A comment is added explaining how the implementation went.
-- [ ] **[SHARE]** Knowledge base is updated with what was learned.
-- [ ] **[REVIEW]** Status is set to `REVIEW` and reviewers are assigned.
-- [ ] **[MERGE]** Branch is rebased from `main`, scores are updated, and status is set to `DONE`.
+- [ ] **[CLEAN]** Code: debug, temporary comments, and dead code are removed.
+- [ ] **[CHECK]** All automated checks (formatting, linting, see CI checks) are passing.
+- [ ] **[CAPTURE:↑]** The _📸 CAPTURES_ section is updated with screenshots or clips illustrating UI/UX changes.
+- [ ] **[STANDUP:↑]** The _🧪 STANDUP_ section has been updated.
+- [ ] **[PULL]** Branch is `git pull --rebase origin main`
+- [ ] **[REVIEW:→]** Status is set to `REVIEW` and reviewers are assigned.
+- [ ] **[REBASE:→]** (once reviewed) Branch is again `git pull --rebase origin main`; Scores are updated; status is set to `DONE`.
+
+Great work. Thank you. A maintainer will squash merge shortly.

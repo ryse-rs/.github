@@ -1,14 +1,13 @@
-name: Production Bug Report
-type: Bug
-description: 🚨 URGENT - PRODUCTION BUG! Please fill with care. 🐞
-title: "[hotfix] "
-labels: ["HOTFIX"]
+name: Task Request
+type: Task
+title: "[task] "
+description: Thank you for contributing to this project! Your efforts are greatly appreciated. 🙏🏻
 projects: ["ryse-rs/2"]
 body:
   - type: markdown
     attributes:
       value: |
-        Our testing must be improved 🧪
+        🦖 Thank you for helping improve the project!
 
         Make sure title is imperative - actionable - starts with a verb.
         Please acknowledge our [CONTRIBUTING guidelines](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md) and our [GOVERNANCE vision](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md).  
@@ -18,29 +17,34 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: What is the issue?
-      description: Example - expected behavior vs current behavior.
+      label: 🧭 What should be done?
+      description: Current situation vs new situation. Context, to help understand your proposal.
     validations:
       required: true
 
   - type: textarea
-    id: steps-to-reproduce
+    id: why
     attributes:
-      label: Steps to reproduce
+      label: 🎯 Why is this task important?
+      description: What problem does it solve? Who benefits from it?
+      placeholder: |
+        This would improve [X] because...
+        It enables [Y] to be done faster/more reliably.
     validations:
       required: true
 
-  - type: input
-    id: env
-    attributes:
-      label: Environment
-      description: e.g. browser, OS, versions of rust, tool, etc.
-
   - type: textarea
-    id: other
+    id: how
     attributes:
-      label: Intel
-      description: Propose a fix, paste log output, or provide any other relevant information (e.g. how to fix it).
+      label: 🛠️ How could this be implemented or integrated?
+      description: |
+        Feel free to provide technical suggestions, implementation details.
+        Use checklists or pseudocode if helpful.  
+        Include links, theory, or any supporting materials.
+      placeholder: |
+        - [ ] Create a new module in ...
+        - [ ] Reuse helper from ...
+        - [ ] Add a test in ...
 
   - type: markdown
     attributes:
