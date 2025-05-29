@@ -89,9 +89,9 @@ To deploy a new internal version, open a PR from **main** to **staging**. A main
 - **main**: Primary development branch representing the latest version.  
     No code may be merged into **main** without at least one approved review. 
 - **staging**: Stable, human-testable builds from **main**; merging triggers internal deployment.  
-- **pre-release**: Populated by merging **staging**; apply release-candidate tags.  
-- **release**: Created by merging a stable **pre-release** and tagging the final version.  
-- **hotfix/**: Urgent fixes → merge into **release** and cherry-pick to **main** as needed.
+- **pre-production**: Populated by merging **staging**; apply release-candidate tags.  
+- **production**: Created by merging a stable **pre-production** and tagging the final version.  
+- **hotfix/**: Urgent fixes → merge into **production** and cherry-pick to **main** as needed.
 
 # Issue Templates
 
@@ -122,9 +122,25 @@ All organization repositories provide the following issue labels:
     ```
     <type>(opt. scope): <imperative title>
     ```
-    - _type_: `fix:`, `feat:`, `task:` mainly, or: `ci:`, `refactor:`, `docs:`, `style:`, `test:`, `perf:`.
+    - _type_: `fix:`, `feat:`, `task:` mainly, but here is the exhaustive list:  
+        | Commit Type | Title                    | Description                                                                                 |
+        | ----------- | ------------------------ | ------------------------------------------------------------------------------------------- |
+        | feat        | Features                 | A new feature                                                                               |
+        | fix         | Bug Fixes                | A bug fix                                                                                   |
+        | docs        | Documentation            | Documentation-only changes                                                                  |
+        | style       | Styles                   | Changes that do not affect the meaning of the code (white-space, formatting, missing semis) |
+        | refactor    | Code Refactoring         | A code change that neither fixes a bug nor adds a feature                                   |
+        | perf        | Performance Improvements | A code change that improves performance                                                     |
+        | test        | Tests                    | Adding missing tests or correcting existing tests                                           |
+        | build       | Builds                   | Changes that affect the build system or external dependencies (e.g., npm, Makefiles)        |
+        | ci          | Continuous Integrations  | Changes to CI configuration files and scripts (e.g., GitHub Actions, Travis)                |
+        | chore       | Chores                   | Other changes that don’t modify source or test files                                        |
+        | revert      | Reverts                  | Reverts a previous commit                                                                   |
+
     - `feat(domain feature):` to indicate scope (optional).
-    - `!` to indicate a breaking change (such as `feat!:`). e.g. library crate api changed.
+    - `!` to indicate a breaking change (such as `feat!:`). e.g. library crate api changed.  
+    Note PR titles are checked by the __CI__ to make sure it follows the convention format.  
+    Important, as PR title are turned into commits which are turned into changelogs.
 - Impact, complexity, and effort scores are set in the issue’s right sidebar.
 - Issue is assigned to PR creator, _status_ is set to `ACTIVE`.
 
@@ -150,6 +166,8 @@ Pull request can then be squashed merged.
 - Before requesting review, clean up your git history.
 
 # Code Standards
+
+Our methodology is inspired by [Extreme Programming](https://wikipedia.org/wiki/Extreme_programming).
 
 1. Use meaningful names
 2. Comment, document and test
