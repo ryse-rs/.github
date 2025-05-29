@@ -26,7 +26,7 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: Why should we do that?
+      label: 🎯 Why would we want this feature?
       description: Who needs this, and what problem does it solve?
       placeholder: |
         Right now, [X] is hard to do or limited.

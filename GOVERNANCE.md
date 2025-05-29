@@ -2,15 +2,16 @@
 
 We believe that great software is built on:
 
-- **Clarity**: clean interfaces, documented decisions, and clear responsibilities.
-- **Transparency**: clear and structured processes and constructive feedback loops.
-- **Modularity**: separation of concerns and composable architecture.
-- **Validation**: testing, type safety, and continuous integration.
-- **Responsibility**: each contributor owns their work from draft to merge.
+- **Empathy & Respect**: anticipating user needs and nurturing a respectful, collaborative environment.  
+- **Responsibility**: documented decisions and responsibilities, end-to-end ownership in contributions.  
+- **Modularity**: separation of concerns and composable architecture.  
+- **Validation**: testing, type safety, and continuous integration.  
 
 # ✔️ Methodology
 
-We use a hybrid Agile-Kanban workflow. Work items progress through a lifecycle defined by GitHub status labels.
+We use a hybrid Agile-Kanban workflow. Work items progress through a lifecycle defined by GitHub _status_ labels.
+
+We apply values and code principles of [Extreme Programming](https://wikipedia.org/wiki/Extreme_programming), at a slower release cycle pace.
 
 Every suggestion, request, or bug report is tracked as a GitHub issue. Issues are refined before being added to the `BACKLOG` GitHub project.
 

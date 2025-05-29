@@ -89,9 +89,9 @@ To deploy a new internal version, open a PR from **main** to **staging**. A main
 - **main**: Primary development branch representing the latest version.  
     No code may be merged into **main** without at least one approved review. 
 - **staging**: Stable, human-testable builds from **main**; merging triggers internal deployment.  
-- **pre-release**: Populated by merging **staging**; apply release-candidate tags.  
-- **release**: Created by merging a stable **pre-release** and tagging the final version.  
-- **hotfix/**: Urgent fixes → merge into **release** and cherry-pick to **main** as needed.
+- **pre-production**: Populated by merging **staging**; apply release-candidate tags.  
+- **production**: Created by merging a stable **pre-production** and tagging the final version.  
+- **hotfix/**: Urgent fixes → merge into **production** and cherry-pick to **main** as needed.
 
 # Issue Templates
 
@@ -150,6 +150,8 @@ Pull request can then be squashed merged.
 - Before requesting review, clean up your git history.
 
 # Code Standards
+
+Our methodology is inspired by [Extreme Programming](https://wikipedia.org/wiki/Extreme_programming).
 
 1. Use meaningful names
 2. Comment, document and test
