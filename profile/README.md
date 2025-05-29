@@ -1,46 +1,39 @@
-# ryse-rs/.github
+# 🚀 Vision
 
-Centralized GitHub configuration and contribution guidelines for the **ryse-rs** organization.
+Learn about our vision, values, and governance in  
+[`.github/GOVERNANCE.md`](../GOVERNANCE.md)
 
-This repository provides:
-- 🌐 Default project health files (issue templates, contributing guide, governance)
-- 🧭 Unified project vision and contribution policies
-- ⚙️ GitHub-wide defaults applied to all repos via GitHub's special `.github` repo mechanism
+# 🤝 Contributing
 
----
+Our methodology is clearly defined.
 
-## 🚀 Vision: Our Approach to Software Development
+Follow our shared reference guide:  
+[`.github/CONTRIBUTING.md`](../CONTRIBUTING.md)
 
-Learn about our vision, values and governance in [GOVERNANCE.md](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md)
+# 🧪 Project management & workflows
 
-## 🤝 How to Contribute
+Our project management applies defined rules, at an organization level:
 
-Start here (must read, it is our shared reference): 📖 [CONTRIBUTING.md](https://github.com/ryse-rs/.github/blob/main/CONTRIBUTING.md)
+- Code standards and methodology inspired by _Extreme Programming_.
+- Branching strategy: `main` to `staging` to `production` cycle.
+- Projects board kanban for day to day management and prioritization  
+- Structured issues (with organization-wide labels) and pull request workflow and rules
+- Issue scoring system: impact, effort, complexity  
+- Automated CI/CD pipelines  
 
-## 🧪 Project Management & Workflows
+# 📋 Pull Request template
 
-We rely on:
-- A consistent **branching strategy** (`main`, `dev`, feature/topic branches)
-- **Project boards** to manage priorities
-- **Issue scoring** to evaluate impact, urgency, and effort
-- Automated **CI/CD pipelines** for validation
-- GitHub **Keywords** to link PRs to issues (`Fixes #...`, `Closes #...`)
-- Follow the [Conventional Commits](https://www.conventionalcommits.org) format.
+🚀 [see here](../PULL_REQUEST_TEMPLATE.yml)
 
-> 🛠 Details on workflows and scoring are defined in [GOVERNANCE.md](https://github.com/ryse-rs/.github/blob/main/GOVERNANCE.md)
+# 📋 Issue templates
 
-## 📋 Issue Templates
+- 🚀 [Feature Request](../ISSUE_TEMPLATE/01-feature-request.yml)  
+- ✨ [Enhancement Proposal](../ISSUE_TEMPLATE/02-task-request.yml)
+- 🐛 [Bug Report](../ISSUE_TEMPLATE/00-bug-report.yml)  
+- 🐛 [Production bug Report](../ISSUE_TEMPLATE/03-hotfix.yml)  
 
-All repositories support unified templates for:
+# 🙌 Acknowledgements
 
-- 🐛 [Bug Reports](.github/ISSUE_TEMPLATE/bug_report.yml)
-- 🚀 [Feature Requests](.github/ISSUE_TEMPLATE/feature_request.yml)
-- ✨ [Enhancement Proposals](.github/ISSUE_TEMPLATE/enhancement.yml)
+Every contribution matters — from typo fixes and code formatting to major refactors and lively discussions.  
 
-These templates help us triage faster and build better software together.
-
-## 🙌 Thanks
-
-Every contribution matters. Whether it's fixing a typo, proposing a major refactor, or joining a discussion — you're helping improve our solutions.
-
-Let’s build great things together.
+Let’s build great things together!
